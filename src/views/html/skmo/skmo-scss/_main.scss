@@ -1,0 +1,216 @@
+// MAIN
+
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 1)
+    ),
+    url(https://th.bing.com/th/id/R.57afc123c1d0b7d334c9a928a888773b?rik=JxNUOZFZ9XkvJw&riu=http%3a%2f%2fvillanuevadelfresno.hoy.es%2farchivos%2f201309%2fimg_9627.jpg&ehk=UaRB69pHxS87fQ58tjgAIT7XxV95YhrBViR1JYUmtH0%3d&risl=&pid=ImgRaw&r=0);
+  background-repeat: no-repeat;
+  background-size: 100% 111%;
+  background-position-x: center;
+}
+
+.contenedores-main {
+  border: none;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px 0px gray;
+
+  .encabezado-contenedores-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #4366a6;
+    height: 55px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    .icono-texto-main {
+      display: flex;
+      margin-left: 25px;
+    }
+
+    .texto-main {
+      margin-left: 12px;
+    }
+
+    .puntos-contenedores-main {
+      margin-right: 20px;
+    }
+  }
+}
+
+.ver-mas {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-top: solid 1px gray;
+}
+
+.eventos {
+  height: 400px;
+}
+
+.mails {
+  height: 533px;
+}
+
+.contactos {
+  height: 500px;
+}
+
+.notificaciones1 {
+  margin-top: -114px;
+  height: 400px;
+}
+
+.proyectos {
+  margin-top: 12px;
+  height: 500px;
+}
+
+.menu-encabezado-contenedores-main {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 1280px) {
+  [class*="col-"] {
+    padding: 12px;
+  }
+
+  .notificaciones1 {
+    margin-top: -125px;
+  }
+
+  .proyectos {
+    margin-top: 0px;
+  }
+
+  .col-xlg-3 {
+    width: 24.8%;
+  }
+
+  .col-xlg-6 {
+    width: 49.8%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .col-lg-4 {
+    width: 32.8%;
+  }
+
+  .notificaciones1 {
+    margin-top: -140px;
+  }
+
+  .proyectos {
+    margin-top: -8px;
+
+    .menu-encabezado-contenedores-main-proyecto {
+      .container-estados {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 786px) and (max-width: 1023px) {
+  .col-md-6 {
+    width: 49.7%;
+  }
+
+  .col-md-12 {
+    width: 99.9%;
+  }
+
+  .notificaciones1 {
+    margin-top: auto;
+  }
+
+  .contactos {
+    margin-top: -100px;
+  }
+
+  .menu-encabezado-contenedores-main-proyecto {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 785px) {
+  .col-sm-6 {
+    width: 49.6%;
+  }
+
+  .notificaciones1 {
+    margin-top: 0px;
+  }
+
+  .contactos {
+    margin-top: -100px;
+  }
+
+  .contenedores-main {
+    width: 100%;
+  }
+
+  .proyectos {
+    .menu-encabezado-contenedores-main-proyecto {
+      .container-estados {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .container-sections {
+    display: flex;
+    flex-direction: column;
+
+    .section-1 {
+      order: 0;
+    }
+
+    .section-2 {
+      order: 2;
+    }
+
+    .section-3 {
+      order: 4;
+    }
+
+    .section-4 {
+      order: 1;
+    }
+
+    .section-5 {
+      order: 3;
+    }
+
+    .col-xs-12 {
+      width: 99.9%;
+    }
+
+    .notificaciones1 {
+      margin-top: auto;
+    }
+
+    .contactos {
+      margin-top: auto;
+    }
+  }
+}

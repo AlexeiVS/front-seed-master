@@ -1,0 +1,53 @@
+.container-mail {
+  height: 430px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  .mensaje {
+    height: calc(100% / 3);
+    border-bottom: 1px solid gray;
+
+    &:last-child {
+      border-bottom: 0px;
+    }
+
+    .datetime {
+      font-size: 13px;
+      padding-top: 15px;
+    }
+
+    .perfil-mail {
+      display: flex;
+      padding-top: 11px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+
+      .imagen-mail {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 5px;
+
+        img {
+          border-radius: 50%;
+          border: 1px solid;
+        }
+      }
+    }
+
+    .enlace-mensaje {
+      font-size: 15.3px;
+      padding-top: 7px;
+      text-decoration: underline;
+    }
+
+    .texto-mensaje {
+      padding-top: 5px;
+      height: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: justify;
+    }
+  }
+}

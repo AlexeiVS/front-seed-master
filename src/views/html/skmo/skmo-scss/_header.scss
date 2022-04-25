@@ -1,0 +1,358 @@
+// ENCABEZADO
+
+header {
+  display: flex;
+}
+
+.container-hamburguesa {
+  display: none;
+}
+
+.container-logo-320 {
+  display: none;
+}
+
+.container-lupa-360 {
+  display: none;
+}
+
+#hamburguesa {
+  display: none;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+#boton-menu {
+  display: none;
+}
+
+.BG {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 0 31px;
+  padding: 13px 50px 13px 50px;
+  box-shadow: 0 2px 6px 0 rgba(153, 153, 153, 0.63);
+  background-image: linear-gradient(to left, #859603, #207e8e 50%);
+
+  .container-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  font-size: 17px;
+
+  .everis {
+    width: 45.5px;
+    height: 18px;
+    // margin: 0 2.8px 0 0;
+    color: white;
+  }
+
+  .knowler {
+    width: 65.9px;
+    height: 18px;
+    margin: 0 0 0 0;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+.navegacion {
+  width: 560px;
+  display: flex;
+  flex-direction: row;
+
+  .rectangulo {
+    position: absolute;
+    width: 510px;
+    height: 40px;
+    margin: 4px 28px 2px;
+    padding: 9px 19.2px 10px 12px;
+    border: 0px;
+    border-radius: 4px;
+  }
+
+  .icon {
+    position: relative;
+    padding: 16px;
+    color: black;
+    width: 525px;
+    text-align: right;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .iconos {
+      align-self: center;
+      text-align: center;
+      padding-right: 35px;
+    }
+
+    .bi {
+      font-size: 23px;
+    }
+
+    a {
+      color: white;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 110px;
+  justify-content: space-around;
+
+  .campana {
+    display: flex;
+    position: relative;
+    height: 49px;
+    width: 50px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      color: white;
+    }
+
+    .numero-notificaciones {
+      position: absolute;
+      color: white;
+      right: 10px;
+      top: 10px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: red;
+      text-align: center;
+      font-size: 10px;
+      font-weight: bold;
+    }
+  }
+
+  .container-desplegable {
+    color: white;
+    font-size: 15px;
+  }
+}
+
+.foto {
+  width: 35px;
+  height: 35px;
+  background: #207e8e;
+  border-radius: 50%;
+  border: solid 1px white;
+}
+
+@media (min-width: 1280px) {
+  .container-left-320 {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .BG {
+    padding: 13px 20px 13px 20px;
+    margin: 0 0 18px;
+
+    .container-nav {
+      justify-content: space-between;
+
+      .container-left-320 {
+        display: none;
+      }
+    }
+  }
+
+  .logo {
+    letter-spacing: 1px;
+    font-size: 16px;
+
+    .everis {
+      width: 48px;
+    }
+
+    .knowler {
+      letter-spacing: 2px;
+    }
+  }
+
+  .navegacion {
+    width: 350px;
+
+    .icon {
+      width: 335px;
+    }
+
+    .rectangulo {
+      width: 315px;
+      margin: 4px 23px 2px;
+    }
+  }
+
+  .menu ul {
+    .iconos {
+      padding-left: 9px;
+      padding-right: 22px;
+    }
+  }
+}
+
+@media (min-width: 786px) and (max-width: 1023px) {
+  .BG {
+    padding: 13px 15px 13px 15px;
+  }
+
+  .container-hamburguesa {
+    display: block;
+  }
+
+  #hamburguesa {
+    display: block;
+    font-size: 30px;
+    color: white;
+  }
+
+  .nav {
+    .navegacion {
+      width: auto;
+
+      .rectangulo {
+        width: 400px;
+      }
+
+      .icon {
+        width: 420px;
+      }
+    }
+  }
+
+  .menu {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 785px) {
+  .BG {
+    padding: 13px 30px 13px 30px;
+  }
+  .navegacion {
+    .rectangulo {
+      width: 210px;
+    }
+  }
+
+  .container-hamburguesa {
+    display: block;
+  }
+
+  #hamburguesa {
+    display: block;
+    font-size: 30px;
+    color: white;
+  }
+
+  .container-nav {
+    .menu {
+      display: none;
+    }
+  }
+
+  .nav {
+    .navegacion {
+      width: 265px;
+
+      .icon {
+        width: 235px;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .BG {
+    padding: 3px 15px 13px 3px;
+    margin: 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navegacion {
+    display: none;
+  }
+
+  .container-nav {
+    .container-left-320 {
+      display: flex;
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+
+  .container-hamburguesa {
+    display: block;
+  }
+
+  #hamburguesa {
+    display: block;
+    font-size: 30px;
+    color: white;
+  }
+
+  .container-logo-320 {
+    display: flex;
+    align-items: center;
+    width: 50px;
+
+    .logo-320 {
+      padding-top: 10px;
+    }
+  }
+
+  .perfil {
+    width: auto;
+
+    .container-lupa-360 {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+    }
+  }
+}

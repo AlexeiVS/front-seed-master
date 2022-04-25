@@ -1,0 +1,77 @@
+.menu-encabezado-contenedores-main {
+    display: flex;
+    background-color: #e3e8f2;
+    color: #4366a6;
+  
+    nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+  
+      .menu-contactos {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+  
+        li {
+          &:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  
+  .container-contactos {
+    display: flex;
+    flex-direction: column;
+    overflow: overlay;
+    height: 400px;
+    padding-left: 25px;
+    padding-right: 25px;
+  
+    .contacto {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid gray;
+      margin-top: 14px;
+      padding-bottom: 14px;
+  
+      &:last-child {
+        border-bottom: 0px;
+      }
+  
+      .container-imagen-info {
+        display: flex;
+        flex-direction: row;
+  
+        .imagen-contacto {
+          max-width: 40px;
+          min-width: 40px;
+          max-height: 40px;
+          min-height: 40px;
+          border-radius: 50%;
+          background-color: cadetblue;
+
+          img {
+              border-radius: 50%;
+              border: 1px solid;
+          }
+        }
+  
+        .info-contacto {
+          margin-left: 14px;
+          padding-top: 3px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+  
+          .nombre-contacto {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  

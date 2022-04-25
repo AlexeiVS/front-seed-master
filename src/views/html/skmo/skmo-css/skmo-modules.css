@@ -1,0 +1,725 @@
+@charset "UTF-8";
+header {
+  display: flex; }
+
+.container-hamburguesa {
+  display: none; }
+
+.container-logo-320 {
+  display: none; }
+
+.container-lupa-360 {
+  display: none; }
+
+#hamburguesa {
+  display: none;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+  padding: 10px; }
+
+#boton-menu {
+  display: none; }
+
+.BG {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 0 31px;
+  padding: 13px 50px 13px 50px;
+  box-shadow: 0 2px 6px 0 rgba(153, 153, 153, 0.63);
+  background-image: linear-gradient(to left, #859603, #207e8e 50%); }
+  .BG .container-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+    .BG .container-nav .nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  font-size: 17px; }
+  .logo .everis {
+    width: 45.5px;
+    height: 18px;
+    color: white; }
+  .logo .knowler {
+    width: 65.9px;
+    height: 18px;
+    margin: 0 0 0 0;
+    color: #fff;
+    font-weight: bold; }
+
+.navegacion {
+  width: 560px;
+  display: flex;
+  flex-direction: row; }
+  .navegacion .rectangulo {
+    position: absolute;
+    width: 510px;
+    height: 40px;
+    margin: 4px 28px 2px;
+    padding: 9px 19.2px 10px 12px;
+    border: 0px;
+    border-radius: 4px; }
+  .navegacion .icon {
+    position: relative;
+    padding: 16px;
+    color: black;
+    width: 525px;
+    text-align: right; }
+
+.menu {
+  display: flex;
+  flex-direction: row; }
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .menu ul .iconos {
+      align-self: center;
+      text-align: center;
+      padding-right: 35px; }
+    .menu ul .bi {
+      font-size: 23px; }
+    .menu ul a {
+      color: white; }
+    .menu ul p {
+      font-size: 13px; }
+
+.perfil {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 110px;
+  justify-content: space-around; }
+  .perfil .campana {
+    display: flex;
+    position: relative;
+    height: 49px;
+    width: 50px;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center; }
+    .perfil .campana i {
+      color: white; }
+    .perfil .campana .numero-notificaciones {
+      position: absolute;
+      color: white;
+      right: 10px;
+      top: 10px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: red;
+      text-align: center;
+      font-size: 10px;
+      font-weight: bold; }
+  .perfil .container-desplegable {
+    color: white;
+    font-size: 15px; }
+
+.foto {
+  width: 35px;
+  height: 35px;
+  background: #207e8e;
+  border-radius: 50%;
+  border: solid 1px white; }
+
+@media (min-width: 1280px) {
+  .container-left-320 {
+    display: none; } }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .BG {
+    padding: 13px 20px 13px 20px;
+    margin: 0 0 18px; }
+    .BG .container-nav {
+      justify-content: space-between; }
+      .BG .container-nav .container-left-320 {
+        display: none; }
+
+  .logo {
+    letter-spacing: 1px;
+    font-size: 16px; }
+    .logo .everis {
+      width: 48px; }
+    .logo .knowler {
+      letter-spacing: 2px; }
+
+  .navegacion {
+    width: 350px; }
+    .navegacion .icon {
+      width: 335px; }
+    .navegacion .rectangulo {
+      width: 315px;
+      margin: 4px 23px 2px; }
+
+  .menu ul .iconos {
+    padding-left: 9px;
+    padding-right: 22px; } }
+@media (min-width: 786px) and (max-width: 1023px) {
+  .BG {
+    padding: 13px 15px 13px 15px; }
+
+  .container-hamburguesa {
+    display: block; }
+
+  #hamburguesa {
+    display: block;
+    font-size: 30px;
+    color: white; }
+
+  .nav .navegacion {
+    width: auto; }
+    .nav .navegacion .rectangulo {
+      width: 400px; }
+    .nav .navegacion .icon {
+      width: 420px; }
+
+  .menu {
+    display: none; } }
+@media (min-width: 600px) and (max-width: 785px) {
+  .BG {
+    padding: 13px 30px 13px 30px; }
+
+  .navegacion .rectangulo {
+    width: 210px; }
+
+  .container-hamburguesa {
+    display: block; }
+
+  #hamburguesa {
+    display: block;
+    font-size: 30px;
+    color: white; }
+
+  .container-nav .menu {
+    display: none; }
+
+  .nav .navegacion {
+    width: 265px; }
+    .nav .navegacion .icon {
+      width: 235px; } }
+@media (min-width: 320px) and (max-width: 599px) {
+  .BG {
+    padding: 3px 15px 13px 3px;
+    margin: 0; }
+
+  .logo {
+    display: none; }
+
+  .navegacion {
+    display: none; }
+
+  .container-nav .container-left-320 {
+    display: flex; }
+  .container-nav .menu {
+    display: none; }
+
+  .container-hamburguesa {
+    display: block; }
+
+  #hamburguesa {
+    display: block;
+    font-size: 30px;
+    color: white; }
+
+  .container-logo-320 {
+    display: flex;
+    align-items: center;
+    width: 50px; }
+    .container-logo-320 .logo-320 {
+      padding-top: 10px; }
+
+  .perfil {
+    width: auto; }
+    .perfil .container-lupa-360 {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 20px; } }
+body {
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white), url(https://th.bing.com/th/id/R.57afc123c1d0b7d334c9a928a888773b?rik=JxNUOZFZ9XkvJw&riu=http%3a%2f%2fvillanuevadelfresno.hoy.es%2farchivos%2f201309%2fimg_9627.jpg&ehk=UaRB69pHxS87fQ58tjgAIT7XxV95YhrBViR1JYUmtH0%3d&risl=&pid=ImgRaw&r=0);
+  background-repeat: no-repeat;
+  background-size: 100% 111%;
+  background-position-x: center; }
+
+.contenedores-main {
+  border: none;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px 0px gray; }
+  .contenedores-main .encabezado-contenedores-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #4366a6;
+    height: 55px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+    .contenedores-main .encabezado-contenedores-main .icono-texto-main {
+      display: flex;
+      margin-left: 25px; }
+    .contenedores-main .encabezado-contenedores-main .texto-main {
+      margin-left: 12px; }
+    .contenedores-main .encabezado-contenedores-main .puntos-contenedores-main {
+      margin-right: 20px; }
+
+.ver-mas {
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-top: solid 1px gray; }
+
+.eventos {
+  height: 400px; }
+
+.mails {
+  height: 533px; }
+
+.contactos {
+  height: 500px; }
+
+.notificaciones1 {
+  margin-top: -114px;
+  height: 400px; }
+
+.proyectos {
+  margin-top: 12px;
+  height: 500px; }
+
+.menu-encabezado-contenedores-main {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+@media (min-width: 1280px) {
+  [class*="col-"] {
+    padding: 12px; }
+
+  .notificaciones1 {
+    margin-top: -125px; }
+
+  .proyectos {
+    margin-top: 0px; }
+
+  .col-xlg-3 {
+    width: 24.8%; }
+
+  .col-xlg-6 {
+    width: 49.8%; } }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .col-lg-4 {
+    width: 32.8%; }
+
+  .notificaciones1 {
+    margin-top: -140px; }
+
+  .proyectos {
+    margin-top: -8px; }
+    .proyectos .menu-encabezado-contenedores-main-proyecto .container-estados {
+      width: 100%; } }
+@media (min-width: 786px) and (max-width: 1023px) {
+  .col-md-6 {
+    width: 49.7%; }
+
+  .col-md-12 {
+    width: 99.9%; }
+
+  .notificaciones1 {
+    margin-top: auto; }
+
+  .contactos {
+    margin-top: -100px; }
+
+  .menu-encabezado-contenedores-main-proyecto {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; } }
+@media (min-width: 600px) and (max-width: 785px) {
+  .col-sm-6 {
+    width: 49.6%; }
+
+  .notificaciones1 {
+    margin-top: 0px; }
+
+  .contactos {
+    margin-top: -100px; }
+
+  .contenedores-main {
+    width: 100%; }
+
+  .proyectos .menu-encabezado-contenedores-main-proyecto .container-estados {
+    width: 100%; } }
+@media (min-width: 320px) and (max-width: 599px) {
+  .container-sections {
+    display: flex;
+    flex-direction: column; }
+    .container-sections .section-1 {
+      order: 0; }
+    .container-sections .section-2 {
+      order: 2; }
+    .container-sections .section-3 {
+      order: 4; }
+    .container-sections .section-4 {
+      order: 1; }
+    .container-sections .section-5 {
+      order: 3; }
+    .container-sections .col-xs-12 {
+      width: 99.9%; }
+    .container-sections .notificaciones1 {
+      margin-top: auto; }
+    .container-sections .contactos {
+      margin-top: auto; } }
+.container-eventos {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 300px;
+  justify-content: space-evenly; }
+
+.hora {
+  min-width: 45px;
+  min-height: 45px;
+  max-width: 45px;
+  max-height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #4366a6;
+  border-radius: 50%; }
+
+.caja-hora {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .caja-hora .info-hora {
+    margin-left: 10px; }
+    .caja-hora .info-hora .enlace-evento {
+      text-decoration: underline; }
+      .caja-hora .info-hora .enlace-evento a {
+        font-weight: bold; }
+
+.container-mail {
+  height: 430px;
+  padding-left: 25px;
+  padding-right: 25px; }
+  .container-mail .mensaje {
+    height: calc(100% / 3);
+    border-bottom: 1px solid gray; }
+    .container-mail .mensaje:last-child {
+      border-bottom: 0px; }
+    .container-mail .mensaje .datetime {
+      font-size: 13px;
+      padding-top: 15px; }
+    .container-mail .mensaje .perfil-mail {
+      display: flex;
+      padding-top: 11px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center; }
+      .container-mail .mensaje .perfil-mail .imagen-mail {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 5px; }
+        .container-mail .mensaje .perfil-mail .imagen-mail img {
+          border-radius: 50%;
+          border: 1px solid; }
+    .container-mail .mensaje .enlace-mensaje {
+      font-size: 15.3px;
+      padding-top: 7px;
+      text-decoration: underline; }
+    .container-mail .mensaje .texto-mensaje {
+      padding-top: 5px;
+      height: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: justify; }
+
+.menu-encabezado-contenedores-main {
+  display: flex;
+  background-color: #e3e8f2;
+  color: #4366a6; }
+  .menu-encabezado-contenedores-main nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%; }
+    .menu-encabezado-contenedores-main nav .menu-contactos {
+      display: flex;
+      width: 100%;
+      justify-content: space-around; }
+      .menu-encabezado-contenedores-main nav .menu-contactos li:first-child {
+        font-weight: bold; }
+
+.container-contactos {
+  display: flex;
+  flex-direction: column;
+  overflow: overlay;
+  height: 400px;
+  padding-left: 25px;
+  padding-right: 25px; }
+  .container-contactos .contacto {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    margin-top: 14px;
+    padding-bottom: 14px; }
+    .container-contactos .contacto:last-child {
+      border-bottom: 0px; }
+    .container-contactos .contacto .container-imagen-info {
+      display: flex;
+      flex-direction: row; }
+      .container-contactos .contacto .container-imagen-info .imagen-contacto {
+        max-width: 40px;
+        min-width: 40px;
+        max-height: 40px;
+        min-height: 40px;
+        border-radius: 50%;
+        background-color: cadetblue; }
+        .container-contactos .contacto .container-imagen-info .imagen-contacto img {
+          border-radius: 50%;
+          border: 1px solid; }
+      .container-contactos .contacto .container-imagen-info .info-contacto {
+        margin-left: 14px;
+        padding-top: 3px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .container-contactos .contacto .container-imagen-info .info-contacto .nombre-contacto {
+          text-decoration: underline; }
+
+.container-notificaciones {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 300px; }
+  .container-notificaciones .cajas-notificaciones {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px; }
+    .container-notificaciones .cajas-notificaciones:last-child {
+      border-bottom: 0px; }
+    .container-notificaciones .cajas-notificaciones .container-checkbox {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 5px; }
+      .container-notificaciones .cajas-notificaciones .container-checkbox .texto-checkbox {
+        width: 180px; }
+        .container-notificaciones .cajas-notificaciones .container-checkbox .texto-checkbox label {
+          font-weight: bold; }
+    .container-notificaciones .cajas-notificaciones .skm {
+      padding-top: 5px; }
+
+.fecha-tope {
+  display: flex;
+  align-items: center;
+  padding-top: 5px; }
+
+.exclamacion {
+  color: orange;
+  font-size: 12px;
+  margin-right: 5px; }
+
+hr {
+  width: 100%;
+  height: 0.5px; }
+
+/********* CHECKBOX PERSONALIZADO **********/
+/* El contenedor */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* Ocultar la casilla de verificación predeterminada del navegador */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+/* Crear una casilla de verificación personalizada */
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  /*background-color: blue;*/
+  border: solid 2px #BDC582; }
+
+/* Al pasar el ratón por encima, agregue un color de fondo verde */
+.container:hover input ~ .checkmark {
+  background-color: #BDC582; }
+
+/* Cuando la casilla de verificación esté marcada, agregue un fondo blanco */
+.container input:checked ~ .checkmark {
+  background-color: white; }
+
+/* Crear la marca de verificación / indicador (oculto cuando no está marcado) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Mostrar la marca de verificación cuando está marcada */
+.container input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Aplicar estilo a la marca de verificación / indicador */
+.container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #BDC582;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.menu-encabezado-contenedores-main-proyecto {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #e3e8f2;
+  color: #4366a6; }
+  .menu-encabezado-contenedores-main-proyecto .container-estados {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 65%; }
+    .menu-encabezado-contenedores-main-proyecto .container-estados .estados-proyectos {
+      display: flex;
+      justify-content: center;
+      height: 43px;
+      align-items: center;
+      width: calc(100% / 3); }
+      .menu-encabezado-contenedores-main-proyecto .container-estados .estados-proyectos:first-child {
+        border-bottom: 2px solid #4366a6;
+        font-weight: bold; }
+
+.container-proyectos {
+  display: flex;
+  flex-direction: column;
+  height: 353px;
+  padding-left: 25px;
+  padding-right: 25px; }
+  .container-proyectos .cajas-proyectos {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% / 3);
+    border-bottom: 1px solid gray; }
+    .container-proyectos .cajas-proyectos:last-child {
+      border-bottom: 0px; }
+    .container-proyectos .cajas-proyectos .proyecto {
+      padding-top: 20px;
+      text-decoration: underline; }
+      .container-proyectos .cajas-proyectos .proyecto a {
+        font-weight: bold; }
+    .container-proyectos .cajas-proyectos .tipo-proyecto {
+      padding-top: 8px; }
+    .container-proyectos .cajas-proyectos .botones-proyectos {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row; }
+      .container-proyectos .cajas-proyectos .botones-proyectos .boton-1 {
+        width: 60px;
+        height: 25px;
+        border-radius: 12px;
+        background-color: #e8eeb3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        margin-right: 13px; }
+      .container-proyectos .cajas-proyectos .botones-proyectos .boton-2 {
+        width: 125px;
+        height: 25px;
+        border-radius: 12px;
+        background-color: #e8eeb3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        margin-right: 13px; }
+      .container-proyectos .cajas-proyectos .botones-proyectos .boton-3 {
+        width: 35px;
+        height: 25px;
+        border-radius: 12px;
+        border: 2px solid #e8eeb3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px; }
+
+@media (min-width: 600px) and (max-width: 785px) {
+  .container-estados {
+    width: 100%; }
+
+  .estados-proyectos {
+    display: flex;
+    justify-content: center;
+    height: 43px;
+    align-items: center;
+    width: calc(100% / 3); }
+    .estados-proyectos:first-child {
+      border-bottom: 2px solid #4366a6;
+      font-weight: bold; }
+
+  .estado-1 {
+    order: 1; }
+
+  .estado-2 {
+    order: 3; }
+
+  .estado-3 {
+    order: 2; } }
+@media (min-width: 320px) and (max-width: 599px) {
+  .menu-encabezado-contenedores-main-proyecto .container-estados {
+    width: 100%; }
+
+  .estado-1 {
+    order: 1; }
+
+  .estado-2 {
+    order: 3; }
+
+  .estado-3 {
+    order: 2; } }
+
+/*# sourceMappingURL=skmo-modules.css.map */
