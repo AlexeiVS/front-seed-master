@@ -12,13 +12,13 @@ body {
   background-position-x: center;
 }
 
-.contenedores-main {
+.container-main {
   border: none;
   background-color: white;
   border-radius: 6px;
   box-shadow: 0px 0px 10px 0px gray;
 
-  .encabezado-contenedores-main {
+  &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,7 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 
-    .icono-texto-main {
+    &--icon {
       display: flex;
       margin-left: 25px;
     }
@@ -37,19 +37,27 @@ body {
       margin-left: 12px;
     }
 
-    .puntos-contenedores-main {
+    &--dots {
       margin-right: 20px;
     }
   }
-}
 
-.ver-mas {
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  border-top: solid 1px gray;
+  &__menu {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__see-more {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-top: solid 1px gray;
+  }
 }
 
 .eventos {
@@ -74,21 +82,23 @@ body {
   height: 500px;
 }
 
-.menu-encabezado-contenedores-main {
-  width: 100%;
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+// .container-main__menu {
+//   width: 100%;
+//   height: 40px;
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+// }
 
 @media (min-width: 1280px) {
   [class*="col-"] {
     padding: 12px;
   }
 
-  .notificaciones1 {
-    margin-top: -125px;
+  .container-sections {
+    &__notifications {
+      margin-top: -125px;
+    }
   }
 
   .proyectos {
@@ -109,13 +119,17 @@ body {
     width: 32.8%;
   }
 
-  .notificaciones1 {
-    margin-top: -140px;
+  .container-sections {
+    &__notifications {
+      margin-top: -125px;
+    }
+
+    &__projects {
+      margin-top: -8px;
+    }
   }
 
   .proyectos {
-    margin-top: -8px;
-
     .menu-encabezado-contenedores-main-proyecto {
       .container-estados {
         width: 100%;
@@ -163,7 +177,7 @@ body {
     margin-top: -100px;
   }
 
-  .contenedores-main {
+  .container-main {
     width: 100%;
   }
 
@@ -181,23 +195,23 @@ body {
     display: flex;
     flex-direction: column;
 
-    .section-1 {
+    &__events {
       order: 0;
     }
 
-    .section-2 {
+    &__mails {
       order: 2;
     }
 
-    .section-3 {
+    &__contacts {
       order: 4;
     }
 
-    .section-4 {
+    &__notifications {
       order: 1;
     }
 
-    .section-5 {
+    &__projects {
       order: 3;
     }
 

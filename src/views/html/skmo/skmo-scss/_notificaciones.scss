@@ -1,128 +1,125 @@
-.container-notificaciones {
+.container-main__notifications {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 300px;
+
+  &--info {
     display: flex;
     flex-direction: column;
-    padding-left: 25px;
-    padding-right: 25px;
-    height: 300px;
-  
-    .cajas-notificaciones {
+    padding-top: 15px;
+
+    &:last-child {
+      border-bottom: 0px;
+    }
+
+    .container-checkbox {
       display: flex;
-      flex-direction: column;
-      padding-top: 15px;
-      // height: calc(100% / 3);
-      // border-bottom: 1px solid gray;
-  
-      &:last-child {
-        border-bottom: 0px;
-      }
-  
-      .container-checkbox {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-bottom: 5px;
-  
-        .texto-checkbox {
-          width: 180px;
-  
-          label {
-            font-weight: bold;
-          }
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 5px;
+
+      .texto-checkbox {
+        width: 180px;
+
+        label {
+          font-weight: bold;
         }
       }
-  
-      .skm {
-        padding-top: 5px;
-      }
+    }
+
+    .skm {
+      padding-top: 5px;
     }
   }
-  
-  .fecha-tope {
-    display: flex;
-    align-items: center;
-    padding-top: 5px;
-  }
-  
-  .exclamacion {
-    color: orange;
-    font-size: 12px;
-      margin-right: 5px;
-  }
-  
-  hr {
-    width: 100%;
-    height: 0.5px;
-  }
-  
-  /********* CHECKBOX PERSONALIZADO **********/
-  
-  /* El contenedor */
-  .container {
-    display: block;
-    position: relative;
-    padding-left: 0;
-    margin-bottom: 0;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Ocultar la casilla de verificación predeterminada del navegador */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Crear una casilla de verificación personalizada */
-  .checkmark {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 20px;
-    width: 20px;
-    /*background-color: blue;*/
-    border: solid 2px #BDC582;
-  }
-  
-  /* Al pasar el ratón por encima, agregue un color de fondo verde */
-  .container:hover input ~ .checkmark {
-    background-color: #BDC582;
-  }
-  
-  /* Cuando la casilla de verificación esté marcada, agregue un fondo blanco */
-  .container input:checked ~ .checkmark {
-    background-color: white;
-  }
-  
-  /* Crear la marca de verificación / indicador (oculto cuando no está marcado) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Mostrar la marca de verificación cuando está marcada */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Aplicar estilo a la marca de verificación / indicador */
-  .container .checkmark:after {
-    left: 6px;
-    top: 3px;
-    width: 5px;
-    height: 10px;
-    border: solid #BDC582;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  
+}
+
+.fecha-tope {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.exclamacion {
+  color: orange;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+hr {
+  width: 100%;
+  height: 0.5px;
+}
+
+/********* CHECKBOX PERSONALIZADO **********/
+
+/* El contenedor */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Ocultar la casilla de verificación predeterminada del navegador */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Crear una casilla de verificación personalizada */
+.checkmark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  /*background-color: blue;*/
+  border: solid 2px #bdc582;
+}
+
+/* Al pasar el ratón por encima, agregue un color de fondo verde */
+.container:hover input ~ .checkmark {
+  background-color: #bdc582;
+}
+
+/* Cuando la casilla de verificación esté marcada, agregue un fondo blanco */
+.container input:checked ~ .checkmark {
+  background-color: white;
+}
+
+/* Crear la marca de verificación / indicador (oculto cuando no está marcado) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Mostrar la marca de verificación cuando está marcada */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Aplicar estilo a la marca de verificación / indicador */
+.container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid #bdc582;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

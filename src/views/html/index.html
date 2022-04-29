@@ -16,23 +16,26 @@
 
 <body>
 
-
-
-    <!-- encabezado -->
+    <!-- ********** ECABEZADO ********** -->
     <header>
 
-        <div class="BG">
+        <!-- Fondo header -->
+        <div class="container-background">
 
             <nav class="container-nav">
 
-                <div class="container-left-320">
-                    <div class="container-hamburguesa">
+                <!-- Diseño para pantallas 320px -->
+                <div class="container-nav__320">
+
+                    <!-- Hamburguesa 320px -->
+                    <div class="container-nav__320--burger">
                         <input type="checkbox" id="boton-menu">
                         <label id="hamburguesa" for="boton-menu"><i class="bi bi-list"
                                 alt="menu desplegable"></i></label>
                     </div>
 
-                    <div class="container-logo-320">
+                    <!-- Logotipo 320px -->
+                    <div class="container-nav__320--logo">
                         <div class="logo-320">
                             <div>
                                 <img src="https://images.squarespace-cdn.com/content/v1/5c52b2063917ee2ea23f9031/1579517425844-PB8BHE5EYVVF87O5FM4C/everis-logo.png"
@@ -43,24 +46,23 @@
 
                 </div>
 
-                <div class="nav">
+                <!-- Diseño para el resto de tamaños -->
+                <div class="container-nav__big">
 
-
-
-                    <!-- logotipo -->
-                    <div class="logo">
+                    <!-- Logotipo -->
+                    <div class="container-nav__big--logo">
                         <div class="everis">everis</div>
                         <div class="knowler">knowler</div>
                     </div>
 
-                    <!-- buscador -->
-                    <div class="navegacion">
+                    <!-- Buscador -->
+                    <div class="container-nav__big--search">
                         <input type="text" class="rectangulo" placeholder="proyecto skm" />
                         <i class="bi bi-search icon" alt="icono lupa busqueda"></i>
                     </div>
 
-                    <!-- menu -->
-                    <div class="menu">
+                    <!-- Lista menus -->
+                    <div class="container-nav__big--menu">
                         <ul>
                             <li class="iconos"><a href="#"><i class="bi bi-house-door-fill"></i>
                                     <p>Inicio</p>
@@ -78,30 +80,34 @@
                     </div>
                 </div>
 
-                <!-- perfil -->
-                <div class="perfil">
+                <!-- Contenedor Perfil -->
+                <div class="container-nav__big--profile">
 
-                    <div class="container-lupa-360">
-
-                        <div class="lupa-360">
+                    <!-- Contenedor Lupa para pantallas 320px -->
+                    <div class="container-nav__320">
+                        <div class="container-nav__320--search">
                             <div>
                                 <i class="bi bi-search" alt="icono lupa busqueda"></i>
                             </div>
                         </div>
                     </div>
 
-                    <div class="campana">
+                    <!-- Contenedro campanita -->
+                    <div class="container-bell">
                         <a href="#"><i class="bi bi-bell-fill"></i>
                             <div class="numero-notificaciones"> 7 </div>
                         </a>
                     </div>
 
-                    <div class="container-foto">
+                    <!-- Contenedor foto perfil -->
+                    <div class="container-photo">
                         <div class="foto">
                             <img src="../../assets/images/klipartz.com.png" alt="">
                         </div>
                     </div>
-                    <div class="container-desplegable">
+
+                    <!-- Contendor flecha desplegable -->
+                    <div class="container-deploy">
                         <a><i class="bi bi-caret-down-fill"></i></a>
                     </div>
                 </div>
@@ -109,26 +115,29 @@
         </div>
     </header>
 
+    <!-- ********** MAIN ********** -->
     <main>
         <div class="col-xlg-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 container-sections">
 
             <!-- EVENTOS -->
-            <section class="col-xlg-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 section-1">
-                <div class="contenedores-main eventos">
-                    <div class=" encabezado-contenedores-main">
-                        <div class="icono-texto-main"><i class="bi bi-table"></i>
+            <section class="col-xlg-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 container-sections__events">
+
+                <div class="container-main">
+
+                    <div class="container-main__header">
+                        <div class="container-main__header--icon"><i class="bi bi-table"></i>
                             <p class="texto-main"> EVENTOS </p>
                         </div>
-                        <div class="puntos-contenedores-main"><i class="bi bi-three-dots-vertical"></i></div>
+                        <div class="container-main__header--dots"><i class="bi bi-three-dots-vertical"></i></div>
                     </div>
 
-                    <div class="container-eventos">
+                    <div class="container-main__events">
 
-                        <div class="hoy">
+                        <div class="container-main__events--day">
                             <p> HOY </p>
                         </div>
 
-                        <div class="caja-hora">
+                        <div class="container-main__events--hour">
                             <div class="hora"> 11:00 </div>
                             <div class="info-hora">
                                 <div class="enlace-evento">
@@ -140,7 +149,7 @@
                             </div>
                         </div>
 
-                        <div class="caja-hora">
+                        <div class="container-main__events--hour">
                             <div class="hora"> 13:00 </div>
                             <div class="info-hora">
                                 <div class="enlace-evento">
@@ -152,11 +161,11 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="container-main__events--day">
                             <p> MAÑANA </p>
                         </div>
 
-                        <div class="caja-hora">
+                        <div class="container-main__events--hour">
                             <div class="hora"> 11:00 </div>
                             <div class="info-hora">
                                 <div class="enlace-evento">
@@ -169,26 +178,31 @@
                         </div>
                     </div>
 
-                    <div class="ver-mas">
+                    <div class="container-main__see-more">
                         <div><a href="#">Ver más <i class="bi bi-chevron-down"></i></a></div>
                     </div>
+
                 </div>
+
             </section>
 
             <!-- MAILS -->
-            <div class="col-xlg-6 col-lg-4 col-md-6 col-sm-6 col-xs-12 section-2">
+            <section class="col-xlg-6 col-lg-4 col-md-6 col-sm-6 col-xs-12 container-sections__mails">
 
-                <div class="contenedores-main mails">
+                <div class="container-main mails">
 
-                    <div class="encabezado-contenedores-main">
-                        <div class="icono-texto-main"><i class="bi bi-envelope-fill"></i>
+                    <!-- Encabezado sección mails -->
+                    <div class="container-main__header">
+                        <div class="container-main__header--icon"><i class="bi bi-envelope-fill"></i>
                             <p class="texto-main">MAILS</p>
                         </div>
-                        <div class="puntos-contenedores-main"><i class="bi bi-three-dots-vertical"></i></div>
+                        <div class="container-main__header--dots"><i class="bi bi-three-dots-vertical"></i></div>
                     </div>
 
-                    <div class="container-mail">
-                        <div class="mensaje">
+                    <!-- Cuerpo principal sección mails -->
+                    <div class="container-main__mails">
+
+                        <div class="container-main__mails--message">
                             <div class="datetime"> 20/06/2017 - 13:00 </div>
                             <div class="perfil-mail">
                                 <figure class="imagen-mail"><img src="../../assets/images/perfil.jpg" alt=""></figure>
@@ -204,7 +218,7 @@
                             </div>
                         </div>
 
-                        <div class="mensaje">
+                        <div class="container-main__mails--message">
                             <div class="datetime"> 20/06/2017 - 13:00 </div>
                             <div class="perfil-mail">
                                 <figure class="imagen-mail"><img src="../../assets/images/perfil.jpg" alt=""></figure>
@@ -222,7 +236,7 @@
                             </div>
                         </div>
 
-                        <div class="mensaje">
+                        <div class="container-main__mails--message">
                             <div class="datetime"> 20/06/2017 - 13:00 </div>
                             <div class="perfil-mail">
                                 <figure class="imagen-mail"><img src="../../assets/images/perfil.jpg" alt=""></figure>
@@ -242,28 +256,29 @@
 
                     </div>
 
-                    <div class="ver-mas">
+                    <div class="container-main__see-more">
                         <div><a href="#"> Ver más <i class="bi bi-chevron-down"></i></a></div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <!-- MIS CONTACTOS -->
-            <div class="col-xlg-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 section-3">
-                <div class="contenedores-main contactos">
+            <section class="col-xlg-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 container-sections__contacts">
 
-                    <!-- encabezado -->
-                    <div class="encabezado-contenedores-main">
-                        <div class="icono-texto-main"><i class="bi bi-people-fill"></i>
+                <div class="container-main contactos">
+
+                    <!-- Encabezado sección contactos -->
+                    <div class="container-main__header">
+                        <div class="container-main__header--icon"><i class="bi bi-people-fill"></i>
                             <p class="texto-main">MIS CONTACTOS</p>
                         </div>
-                        <div class="puntos-contenedores-main"><i class="bi bi-three-dots-vertical"></i></div>
+                        <div class="container-main__header--dots"><i class="bi bi-three-dots-vertical"></i></div>
                     </div>
 
-                    <!-- menú encabezado -->
-                    <div class="menu-encabezado-contenedores-main">
+                    <!-- Menú sección contactos -->
+                    <div class="container-main__menu">
                         <nav>
-                            <ul class="menu-contactos">
+                            <ul class="container-main__menu--list-contacts">
                                 <li> Contactos </li>
                                 <li> Grupos </li>
                                 <li> Relacionados </li>
@@ -271,12 +286,13 @@
                         </nav>
                     </div>
 
-                    <!-- contactos -->
-                    <div class="container-contactos">
+                    <!-- Cuerpo principal sección contactos -->
+                    <div class="container-main__contacts">
 
-                        <div class="contacto">
-                            <div class="container-imagen-info">
-                                <figure class="imagen-contacto"><img src="../../assets/images/perfil.jpg" alt="">
+                        <div class="container-main__contacts--profile">
+                            <div class="container-main__contacts--profile--info">
+                                <figure class="container-main__contacts--profile--info--photo"><img
+                                        src="../../assets/images/perfil.jpg" alt="">
                                 </figure>
                                 <div class="info-contacto">
                                     <div class="nombre-contacto"><a href="#">
@@ -290,9 +306,10 @@
                             <div class="icono-desplegable"><a href="#"><i class="bi bi-chevron-down"></i></a></div>
                         </div>
 
-                        <div class="contacto">
-                            <div class="container-imagen-info">
-                                <figure class="imagen-contacto"><img src="../../assets/images/perfil.jpg" alt="">
+                        <div class="container-main__contacts--profile">
+                            <div class="container-main__contacts--profile--info">
+                                <figure class="container-main__contacts--profile--info--photo"><img
+                                        src="../../assets/images/perfil.jpg" alt="">
                                 </figure>
                                 <div class="info-contacto">
                                     <div class="nombre-contacto"><a href="#">
@@ -306,9 +323,10 @@
                             <div class="icono-desplegable"><a href="#"><i class="bi bi-chevron-down"></i></a></div>
                         </div>
 
-                        <div class="contacto">
-                            <div class="container-imagen-info">
-                                <figure class="imagen-contacto"><img src="../../assets/images/perfil.jpg" alt="">
+                        <div class="container-main__contacts--profile">
+                            <div class="container-main__contacts--profile--info">
+                                <figure class="container-main__contacts--profile--info--photo"><img
+                                        src="../../assets/images/perfil.jpg" alt="">
                                 </figure>
                                 <div class="info-contacto">
                                     <div class="nombre-contacto"><a href="#">
@@ -322,9 +340,10 @@
                             <div class="icono-desplegable"><a href="#"><i class="bi bi-chevron-down"></i></a></div>
                         </div>
 
-                        <div class="contacto">
-                            <div class="container-imagen-info">
-                                <figure class="imagen-contacto"><img src="../../assets/images/perfil.jpg" alt="">
+                        <div class="container-main__contacts--profile">
+                            <div class="container-main__contacts--profile--info">
+                                <figure class="container-main__contacts--profile--info--photo"><img
+                                        src="../../assets/images/perfil.jpg" alt="">
                                 </figure>
                                 <div class="info-contacto">
                                     <div class="nombre-contacto"><a href="#">
@@ -338,9 +357,10 @@
                             <div class="icono-desplegable"><a href="#"><i class="bi bi-chevron-down"></i></a></div>
                         </div>
 
-                        <div class="contacto">
-                            <div class="container-imagen-info">
-                                <figure class="imagen-contacto"><img src="../../assets/images/perfil.jpg" alt="">
+                        <div class="container-main__contacts--profile">
+                            <div class="container-main__contacts--profile--info">
+                                <figure class="container-main__contacts--profile--info--photo"><img
+                                        src="../../assets/images/perfil.jpg" alt="">
                                 </figure>
                                 <div class="info-contacto">
                                     <div class="nombre-contacto"><a href="#">
@@ -354,9 +374,10 @@
                             <div class="icono-desplegable"><a href="#"><i class="bi bi-chevron-down"></i></a></div>
                         </div>
 
-                        <div class="contacto">
-                            <div class="container-imagen-info">
-                                <figure class="imagen-contacto"><img src="../../assets/images/perfil.jpg" alt="">
+                        <div class="container-main__contacts--profile">
+                            <div class="container-main__contacts--profile--info">
+                                <figure class="container-main__contacts--profile--info--photo"><img
+                                        src="../../assets/images/perfil.jpg" alt="">
                                 </figure>
                                 <div class="info-contacto">
                                     <div class="nombre-contacto"><a href="#">
@@ -370,9 +391,10 @@
                             <div class="icono-desplegable"><a href="#"><i class="bi bi-chevron-down"></i></a></div>
                         </div>
 
-                        <div class="contacto">
-                            <div class="container-imagen-info">
-                                <figure class="imagen-contacto"><img src="../../assets/images/perfil.jpg" alt="">
+                        <div class="container-main__contacts--profile">
+                            <div class="container-main__contacts--profile--info">
+                                <figure class="container-main__contacts--profile--info--photo"><img
+                                        src="../../assets/images/perfil.jpg" alt="">
                                 </figure>
                                 <div class="info-contacto">
                                     <div class="nombre-contacto"><a href="#">
@@ -386,9 +408,10 @@
                             <div class="icono-desplegable"><a href="#"><i class="bi bi-chevron-down"></i></a></div>
                         </div>
 
-                        <div class="contacto">
-                            <div class="container-imagen-info">
-                                <figure class="imagen-contacto"><img src="../../assets/images/perfil.jpg" alt="">
+                        <div class="container-main__contacts--profile">
+                            <div class="container-main__contacts--profile--info">
+                                <figure class="container-main__contacts--profile--info--photo"><img
+                                        src="../../assets/images/perfil.jpg" alt="">
                                 </figure>
                                 <div class="info-contacto">
                                     <div class="nombre-contacto"><a href="#">
@@ -403,9 +426,10 @@
                             </div>
                         </div>
 
-                        <div class="contacto">
-                            <div class="container-imagen-info">
-                                <figure class="imagen-contacto"><img src="../../assets/images/perfil.jpg" alt="">
+                        <div class="container-main__contacts--profile">
+                            <div class="container-main__contacts--profile--info">
+                                <figure class="container-main__contacts--profile--info--photo"><img
+                                        src="../../assets/images/perfil.jpg" alt="">
                                 </figure>
                                 <div class="info-contacto">
                                     <div class="nombre-contacto"><a href="#">
@@ -420,10 +444,10 @@
                             </div>
                         </div>
 
-
-                        <div class="contacto">
-                            <div class="container-imagen-info">
-                                <figure class="imagen-contacto"><img src="../../assets/images/perfil.jpg" alt="">
+                        <div class="container-main__contacts--profile">
+                            <div class="container-main__contacts--profile--info">
+                                <figure class="container-main__contacts--profile--info--photo"><img
+                                        src="../../assets/images/perfil.jpg" alt="">
                                 </figure>
                                 <div class="info-contacto">
                                     <div class="nombre-contacto"><a href="#">
@@ -442,22 +466,25 @@
                     </div>
                 </div>
 
-            </div>
+            </section>
 
             <!-- NOTIFICACIONES -->
-            <div class="col-xlg-3  col-lg-4 col-md-6 col-sm-6 col-xs-12 section-4">
-                <div class="contenedores-main notificaciones1">
+            <section class="col-xlg-3  col-lg-4 col-md-6 col-sm-6 col-xs-12 container-sections__notifications">
 
-                    <div class="encabezado-contenedores-main">
-                        <div class="icono-texto-main"><i class="bi bi-bell-fill"></i>
-                            <p class="texto-main">NOTIFICACIONES</p>
+                <div class="container-main">
+
+                    <!-- Encabezado sección notificaciones -->
+                    <div class="container-main__header">
+                        <div class="container-main__header--icon"><i class="bi bi-bell-fill"></i>
+                            <p class="texto-main"> NOTIFICACIONES </p>
                         </div>
-                        <div class="puntos-contenedores-main"><i class="bi bi-three-dots-vertical"></i></div>
+                        <div class="container-main__header--dots"><i class="bi bi-three-dots-vertical"></i></div>
                     </div>
 
-                    <div class="container-notificaciones">
+                    <!-- Cuerpo principal sección notificaciones -->
+                    <div class="container-main__notifications">
 
-                        <div class="cajas-notificaciones">
+                        <div class="container-main__notifications--info">
                             <label class="container"> Actualizar benchmark perfiles en proyecto
                                 <input type="checkbox" checked="checked">
                                 <span class="checkmark"></span>
@@ -476,7 +503,7 @@
 
                         </div>
                         <hr>
-                        <div class="cajas-notificaciones">
+                        <div class="container-main__notifications--info">
                             <label class="container"> Actualizar documentos
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
@@ -494,7 +521,7 @@
                             </div>
                         </div>
                         <hr>
-                        <div class="cajas-notificaciones">
+                        <div class="container-main__notifications--info">
                             <label class="container"> Actualizar documentos
                                 <input type="checkbox">
                                 <span class="checkmark"></span>
@@ -514,101 +541,111 @@
 
                     </div>
 
-                    <div class="ver-mas">
+                    <div class="container-main__see-more">
                         <div><a href="#"> Ver más <i class="bi bi-chevron-down"></i></a></div>
                     </div>
                 </div>
 
-            </div>
+            </section>
 
             <!-- PROYECTOS -->
-            <div class="col-xlg-6  col-lg-4 col-md-12 col-sm-6 col-xs-12 section-5">
-                <div class="contenedores-main proyectos">
-                    <div class="encabezado-contenedores-main">
-                        <div class="icono-texto-main"><i class="bi bi-folder-fill"></i>
+            <section class="col-xlg-6  col-lg-4 col-md-12 col-sm-6 col-xs-12 container-sections__projects">
+
+                <div class="container-main proyectos">
+
+                    <!-- Encabezado sección proyectos -->
+                    <div class="container-main__header">
+                        <div class="container-main__header--icon"><i class="bi bi-folder-fill"></i>
                             <p class="texto-main">PROYECTOS</p>
                         </div>
-                        <div class="puntos-contenedores-main"><i class="bi bi-three-dots-vertical"></i></div>
+                        <div class="container-main__header--dots"><i class="bi bi-three-dots-vertical"></i></div>
                     </div>
 
-                    <div class="menu-encabezado-contenedores-main-proyecto">
-                        <div class="container-estados">
-                            <div class="estados-proyectos estado-1"> En curso </div>
-                            <div class="estados-proyectos estado-2"> Relacionados </div>
-                            <div class="estados-proyectos estado-3"> Cerrados </div>
+                    <!-- Menu sección proyectos -->
+                    <div class="container-main__menu">
+                        <div class="container-main__menu--status">
+                            <div class="status-project current"><a href="#"> En curso </a></div>
+                            <div class="status-project related"><a href="#"> Relacionados </a></div>
+                            <div class="status-project closed"><a href="#"> Cerrados </a></div>
                         </div>
                     </div>
 
-                    <div class="container-proyectos">
+                    <!-- Cuerpo principal sección proyectos -->
+                    <div class="container-main__projects">
 
-                        <div class="cajas-proyectos">
-                            <div class="proyecto">
+                        <div class="container-main__projects--info">
+                            <div class="container-main__projects--info--name">
                                 <p><a href="#"> SKM: intranet inteligente </a></p>
                             </div>
-                            <div class="tipo-proyecto">
+                            <div class="container-main__projects--info--type">
                                 <p> Proyecto interno </p>
                             </div>
-                            <div class="botones-proyectos">
-                                <div class="boton-1">
+                            <div class="container-main__projects--info--buttons">
+                                <div class="container-main__projects--info--buttons--button-one">
                                     <p> Intranet </p>
                                 </div>
-                                <div class="boton-2">
+                                <div class="container-main__projects--info--buttons--button-two">
                                     <p> Buscador inteligente </p>
                                 </div>
-                                <div class="boton-3">
+                                <div class="container-main__projects--info--buttons--button-three">
                                     <p> +2 </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="cajas-proyectos">
-                            <div class="proyecto">
+                        <div class="container-main__projects--info">
+                            <div class="container-main__projects--info--name">
                                 <p><a href="#"> SKM: intranet inteligente </a></p>
                             </div>
-                            <div class="tipo-proyecto">
+                            <div class="container-main__projects--info--type">
                                 <p> Proyecto interno </p>
                             </div>
-                            <div class="botones-proyectos">
-                                <div class="boton-1">
+                            <div class="container-main__projects--info--buttons">
+                                <div class="container-main__projects--info--buttons--button-one">
                                     <p> Intranet </p>
                                 </div>
-                                <div class="boton-2">
+                                <div class="container-main__projects--info--buttons--button-two">
                                     <p> Buscador inteligente </p>
                                 </div>
-                                <div class="boton-3">
+                                <div class="container-main__projects--info--buttons--button-three">
                                     <p> +2 </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="cajas-proyectos">
-                            <div class="proyecto">
+                        <div class="container-main__projects--info">
+                            <div class="container-main__projects--info--name">
                                 <p><a href="#"> SKM: intranet inteligente </a></p>
                             </div>
-                            <div class="tipo-proyecto">
+                            <div class="container-main__projects--info--type">
                                 <p> Proyecto interno </p>
                             </div>
-                            <div class="botones-proyectos">
-                                <div class="boton-1">
+                            <div class="container-main__projects--info--buttons">
+                                <div class="container-main__projects--info--buttons--button-one">
                                     <p> Intranet </p>
                                 </div>
-                                <div class="boton-2">
+                                <div class="container-main__projects--info--buttons--button-two">
                                     <p> Buscador inteligente </p>
                                 </div>
-                                <div class="boton-3">
+                                <div class="container-main__projects--info--buttons--button-three">
                                     <p> +2 </p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="ver-mas">
+                    <div class="container-main__see-more">
                         <div><a href="#"> Ver más <i class="bi bi-chevron-down"></i></a></div>
                     </div>
+
                 </div>
 
-            </div>
+            </section>
+
+        </div>
+
     </main>
+
 </body>
 
 </html>

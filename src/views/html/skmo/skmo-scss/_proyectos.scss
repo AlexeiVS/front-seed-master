@@ -1,157 +1,179 @@
-.menu-encabezado-contenedores-main-proyecto {
-    width: 100%;
-    height: 40px;
+.container-main__menu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #e3e8f2;
+  color: #4366a6;
+
+  &--status {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #e3e8f2;
-    color: #4366a6;
-  
-    .container-estados {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      width: 65%;
-  
-      .estados-proyectos {
-        display: flex;
-        justify-content: center;
-        height: 43px;
-        align-items: center;
-        width: calc(100% / 3);
-  
-        &:first-child {
-          border-bottom: 2px solid #4366a6;
-          font-weight: bold;
-        }
-      }
-    }
-  }
-  
-  .container-proyectos {
-    display: flex;
-    flex-direction: column;
-    height: 353px;
-    padding-left: 25px;
-    padding-right: 25px;
-  
-    .cajas-proyectos {
-      display: flex;
-      flex-direction: column;
-  
-      height: calc(100% / 3);
-      border-bottom: 1px solid gray;
-  
-      &:last-child {
-        border-bottom: 0px;
-      }
-  
-      .proyecto {
-        padding-top: 20px;
-        text-decoration: underline;
-  
-        a {
-          font-weight: bold;
-        }
-      }
-  
-      .tipo-proyecto {
-        padding-top: 8px;
-      }
-  
-      .botones-proyectos {
-        padding-top: 10px;
-        display: flex;
-        flex-direction: row;
-  
-        .boton-1 {
-          width: 60px;
-          height: 25px;
-          border-radius: 12px;
-          background-color: #e8eeb3;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          font-size: 12px;
-          margin-right: 13px;
-        }
-  
-        .boton-2 {
-          width: 125px;
-          height: 25px;
-          border-radius: 12px;
-          background-color: #e8eeb3;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          font-size: 12px;
-          margin-right: 13px;
-        }
-  
-        .boton-3 {
-          width: 35px;
-          height: 25px;
-          border-radius: 12px;
-          border: 2px solid #e8eeb3;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          font-size: 12px;
-        }
-      }
-    }
-  }
-  
-  @media (min-width: 600px) and (max-width: 785px) {
-    .container-estados {
-      width: 100%;
-    }
-  
-    .estados-proyectos {
+    align-items: center;
+    width: 65%;
+
+    .status-project {
       display: flex;
       justify-content: center;
       height: 43px;
       align-items: center;
       width: calc(100% / 3);
-  
+
       &:first-child {
         border-bottom: 2px solid #4366a6;
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.container-main__projects {
+  display: flex;
+  flex-direction: column;
+  height: 353px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  &--info {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% / 3);
+    border-bottom: 1px solid gray;
+
+    &--name {
+      padding-top: 20px;
+      text-decoration: underline;
+
+      a {
         font-weight: bold;
       }
     }
-  
-    .estado-1 {
-      order: 1;
+
+    &--type {
+      padding-top: 8px;
     }
-  
-    .estado-2 {
-      order: 3;
+
+    &--buttons {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row;
+
+      &--button-one {
+        width: 60px;
+        height: 25px;
+        border-radius: 12px;
+        background-color: #e8eeb3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        margin-right: 13px;
+      }
+
+      &--button-two {
+        width: 125px;
+        height: 25px;
+        border-radius: 12px;
+        background-color: #e8eeb3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        margin-right: 13px;
+      }
+
+      &--button-three {
+        width: 35px;
+        height: 25px;
+        border-radius: 12px;
+        border: 2px solid #e8eeb3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+      }
     }
-  
-    .estado-3 {
-      order: 2;
+
+    &:last-child {
+      border-bottom: 0px;
     }
   }
-  
-  @media (min-width: 320px) and (max-width: 599px) {
-    .menu-encabezado-contenedores-main-proyecto .container-estados {
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+
+  .container-main {
+    &__menu {
+      &--status {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 785px) {
+  .container-main__menu {
+    width: 100%;
+
+    &--status {
+      display: flex;
+      justify-content: space-around;
       width: 100%;
-    }
-  
-    .estado-1 {
-      order: 1;
-    }
-  
-    .estado-2 {
-      order: 3;
-    }
-  
-    .estado-3 {
-      order: 2;
+
+      .current {
+        order: 1;
+      }
+
+      .related {
+        order: 3;
+      }
+
+      .closed {
+        order: 2;
+      }
     }
   }
-  
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .container-main__menu--status {
+    width: 100%;
+  }
+
+  .current {
+    order: 1;
+  }
+
+  .related {
+    order: 3;
+  }
+
+  .closed {
+    order: 2;
+  }
+
+  .container-main__projects {
+    &--info {
+      &--buttons {
+        &--button-one {
+          font-size: 10px;
+        }
+
+        &--button-two {
+          font-size: 10px;
+        }
+
+        &--button-three {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

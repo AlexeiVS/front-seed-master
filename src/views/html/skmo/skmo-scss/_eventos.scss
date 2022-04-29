@@ -1,10 +1,28 @@
-.container-eventos {
+.container-main__events {
     display: flex;
     flex-direction: column;
     padding-left: 25px;
     padding-right: 25px;
     height: 300px;
     justify-content: space-evenly;
+
+    &--hour {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    
+      .info-hora {
+        margin-left: 10px;
+    
+        .enlace-evento {
+          text-decoration: underline;
+    
+          a {
+            font-weight: bold;
+          }
+        }
+      }
+    }
   }
   
   .hora {
@@ -20,21 +38,5 @@
     border-radius: 50%;
   }
   
-  .caja-hora {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   
-    .info-hora {
-      margin-left: 10px;
-  
-      .enlace-evento {
-        text-decoration: underline;
-  
-        a {
-          font-weight: bold;
-        }
-      }
-    }
-  }
   

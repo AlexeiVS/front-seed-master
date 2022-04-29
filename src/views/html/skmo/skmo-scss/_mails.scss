@@ -1,9 +1,9 @@
-.container-mail {
+.container-main__mails {
   height: 430px;
   padding-left: 25px;
   padding-right: 25px;
 
-  .mensaje {
+  &--message {
     height: calc(100% / 3);
     border-bottom: 1px solid gray;
 

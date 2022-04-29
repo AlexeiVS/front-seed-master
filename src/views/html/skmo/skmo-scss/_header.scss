@@ -4,31 +4,7 @@ header {
   display: flex;
 }
 
-.container-hamburguesa {
-  display: none;
-}
-
-.container-logo-320 {
-  display: none;
-}
-
-.container-lupa-360 {
-  display: none;
-}
-
-#hamburguesa {
-  display: none;
-  flex-direction: row;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-}
-
-#boton-menu {
-  display: none;
-}
-
-.BG {
+.container-background {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -45,19 +21,21 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    .nav {
+    &__big {
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      &--logo {
+        display: flex;
+        flex-direction: row;
+        font-size: 17px;
+      }
     }
   }
 }
 
-.logo {
-  display: flex;
-  flex-direction: row;
-  font-size: 17px;
-
+.container-nav__big--logo {
   .everis {
     width: 45.5px;
     height: 18px;
@@ -74,7 +52,7 @@ header {
   }
 }
 
-.navegacion {
+.container-nav__big--search {
   width: 560px;
   display: flex;
   flex-direction: row;
@@ -98,7 +76,7 @@ header {
   }
 }
 
-.menu {
+.container-nav__big--menu {
   display: flex;
   flex-direction: row;
 
@@ -127,14 +105,14 @@ header {
   }
 }
 
-.perfil {
+.container-nav__big--profile {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 110px;
   justify-content: space-around;
 
-  .campana {
+  .container-bell {
     display: flex;
     position: relative;
     height: 49px;
@@ -162,13 +140,13 @@ header {
     }
   }
 
-  .container-desplegable {
+  .container-deploy {
     color: white;
     font-size: 15px;
   }
 }
 
-.foto {
+.container-photo {
   width: 35px;
   height: 35px;
   background: #207e8e;
@@ -176,67 +154,93 @@ header {
   border: solid 1px white;
 }
 
-@media (min-width: 1280px) {
-  .container-left-320 {
+// Ocultar contenedores hasta que la pantalla no tengan tamaño requerido
+.container-nav {
+  &__320 {
     display: none;
   }
 }
 
+#hamburguesa {
+  display: none;
+  flex-direction: row;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+#boton-menu {
+  display: none;
+}
+
+// ***** Diseño contenido para pantalla desde 1024px hasta 1279px *****
+
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .BG {
+  .container-background {
     padding: 13px 20px 13px 20px;
     margin: 0 0 18px;
 
     .container-nav {
       justify-content: space-between;
+    }
 
-      .container-left-320 {
-        display: none;
+    .logo {
+      letter-spacing: 1px;
+      font-size: 16px;
+
+      .everis {
+        width: 48px;
+      }
+
+      .knowler {
+        letter-spacing: 2px;
       }
     }
-  }
 
-  .logo {
-    letter-spacing: 1px;
-    font-size: 16px;
+    .container-nav__big--search {
+      width: 350px;
 
-    .everis {
-      width: 48px;
+      .icon {
+        width: 335px;
+      }
+
+      .rectangulo {
+        width: 315px;
+        margin: 4px 23px 2px;
+      }
     }
 
-    .knowler {
-      letter-spacing: 2px;
-    }
-  }
-
-  .navegacion {
-    width: 350px;
-
-    .icon {
-      width: 335px;
-    }
-
-    .rectangulo {
-      width: 315px;
-      margin: 4px 23px 2px;
-    }
-  }
-
-  .menu ul {
-    .iconos {
-      padding-left: 9px;
-      padding-right: 22px;
+    .container-nav__big--menu ul {
+      .iconos {
+        padding-left: 9px;
+        padding-right: 22px;
+      }
     }
   }
 }
 
+// ***** Diseño contenido para pantalla desde 786px hasta 1023px *****
+
 @media (min-width: 786px) and (max-width: 1023px) {
-  .BG {
+  // Ocultamos contenedor
+  .container-nav__big--menu {
+    display: none;
+  }
+
+  .container-background {
     padding: 13px 15px 13px 15px;
   }
 
-  .container-hamburguesa {
+  .container-nav__320 {
     display: block;
+
+    &--logo {
+      display: none;
+    }
+
+    &--search {
+      display: none;
+    }
   }
 
   #hamburguesa {
@@ -245,8 +249,8 @@ header {
     color: white;
   }
 
-  .nav {
-    .navegacion {
+  .container-nav__big {
+    &--search {
       width: auto;
 
       .rectangulo {
@@ -258,24 +262,30 @@ header {
       }
     }
   }
-
-  .menu {
-    display: none;
-  }
 }
 
+// ***** Diseño contenido para pantalla desde 600px hasta 785px *****
+
 @media (min-width: 600px) and (max-width: 785px) {
-  .BG {
+  .container-background {
     padding: 13px 30px 13px 30px;
   }
-  .navegacion {
+  .container-nav__big--search {
     .rectangulo {
       width: 210px;
     }
   }
 
-  .container-hamburguesa {
+  .container-nav__320 {
     display: block;
+
+    &--logo {
+      display: none;
+    }
+
+    &--search {
+      display: none;
+    }
   }
 
   #hamburguesa {
@@ -284,14 +294,14 @@ header {
     color: white;
   }
 
-  .container-nav {
-    .menu {
+  .container-nav__big {
+    &--menu {
       display: none;
     }
   }
 
-  .nav {
-    .navegacion {
+  .container-nav__big {
+    &--search {
       width: 265px;
 
       .icon {
@@ -301,58 +311,51 @@ header {
   }
 }
 
+// ***** Diseño contenido para pantalla desde 320px hasta 599px *****
+
 @media (min-width: 320px) and (max-width: 599px) {
-  .BG {
+  .container-background {
     padding: 3px 15px 13px 3px;
     margin: 0;
-  }
 
-  .logo {
-    display: none;
-  }
-
-  .navegacion {
-    display: none;
-  }
-
-  .container-nav {
-    .container-left-320 {
-      display: flex;
-    }
-
-    .menu {
+    .container-nav__big {
       display: none;
     }
   }
 
-  .container-hamburguesa {
-    display: block;
+  .container-nav__big--search {
+    display: none;
+  }
+
+  .container-nav__big--menu {
+    display: none;
+  }
+
+  .container-nav {
+    &__320 {
+      display: flex;
+
+      &--burger {
+        display: block;
+      }
+
+      &--logo {
+        display: flex;
+        align-items: center;
+        width: 50px;
+        margin-top: 10px;
+      }
+
+      &--search {
+        color: white;
+        font-size: 20px;
+      }
+    }
   }
 
   #hamburguesa {
     display: block;
     font-size: 30px;
     color: white;
-  }
-
-  .container-logo-320 {
-    display: flex;
-    align-items: center;
-    width: 50px;
-
-    .logo-320 {
-      padding-top: 10px;
-    }
-  }
-
-  .perfil {
-    width: auto;
-
-    .container-lupa-360 {
-      display: flex;
-      align-items: center;
-      color: white;
-      font-size: 20px;
-    }
   }
 }
