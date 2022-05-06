@@ -253,8 +253,8 @@ body {
     .container-main__header--icon {
       display: flex;
       margin-left: 25px; }
-    .container-main__header .texto-main {
-      margin-left: 12px; }
+      .container-main__header--icon--text {
+        margin-left: 12px; }
     .container-main__header--dots {
       margin-right: 20px; }
   .container-main__menu {
@@ -375,60 +375,59 @@ body {
   padding-right: 25px;
   height: 300px;
   justify-content: space-evenly; }
-  .container-main__events--hour {
+  .container-main__events--info {
     display: flex;
     flex-direction: row;
     align-items: center; }
-    .container-main__events--hour .info-hora {
+    .container-main__events--info--hour {
+      min-width: 45px;
+      min-height: 45px;
+      max-width: 45px;
+      max-height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: #4366a6;
+      border-radius: 50%; }
+    .container-main__events--info--description {
       margin-left: 10px; }
-      .container-main__events--hour .info-hora .enlace-evento {
+      .container-main__events--info--description--link {
         text-decoration: underline; }
-        .container-main__events--hour .info-hora .enlace-evento a {
+        .container-main__events--info--description--link a {
           font-weight: bold; }
-
-.hora {
-  min-width: 45px;
-  min-height: 45px;
-  max-width: 45px;
-  max-height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  background-color: #4366a6;
-  border-radius: 50%; }
 
 .container-main__mails {
   height: 430px;
   padding-left: 25px;
   padding-right: 25px; }
-  .container-main__mails--message {
+  .container-main__mails--info {
     height: calc(100% / 3);
     border-bottom: 1px solid gray; }
-    .container-main__mails--message:last-child {
-      border-bottom: 0px; }
-    .container-main__mails--message .datetime {
+    .container-main__mails--info--datetime {
       font-size: 13px;
       padding-top: 15px; }
-    .container-main__mails--message .perfil-mail {
+    .container-main__mails--info:last-child {
+      border-bottom: 0px; }
+    .container-main__mails--info--profile {
       display: flex;
       padding-top: 11px;
       flex-direction: row;
       flex-wrap: nowrap;
       align-items: center; }
-      .container-main__mails--message .perfil-mail .imagen-mail {
+      .container-main__mails--info--profile--photo {
         width: 20px;
         height: 20px;
         border-radius: 50%;
         margin-right: 5px; }
-        .container-main__mails--message .perfil-mail .imagen-mail img {
+        .container-main__mails--info--profile--photo img {
           border-radius: 50%;
           border: 1px solid; }
-    .container-main__mails--message .enlace-mensaje {
+    .container-main__mails--info--link {
       font-size: 15.3px;
       padding-top: 7px;
       text-decoration: underline; }
-    .container-main__mails--message .texto-mensaje {
+    .container-main__mails--info--text {
       padding-top: 5px;
       height: 40px;
       overflow: hidden;
@@ -450,7 +449,6 @@ body {
     width: 100%; }
     .container-main__menu nav li:first-child {
       font-weight: bold; }
-
 .container-main__contacts {
   display: flex;
   flex-direction: column;
@@ -476,13 +474,13 @@ body {
         .container-main__contacts--profile--info--photo img {
           border-radius: 50%;
           border: 1px solid; }
-      .container-main__contacts--profile--info .info-contacto {
+      .container-main__contacts--profile--info--description {
         margin-left: 14px;
         padding-top: 3px;
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
-        .container-main__contacts--profile--info .info-contacto .nombre-contacto {
+        .container-main__contacts--profile--info--description--name {
           text-decoration: underline; }
     .container-main__contacts--profile:last-child {
       border-bottom: 0px; }
@@ -497,29 +495,18 @@ body {
     display: flex;
     flex-direction: column;
     padding-top: 15px; }
+    .container-main__notifications--info--skm {
+      padding-top: 5px; }
+    .container-main__notifications--info--deadline {
+      display: flex;
+      align-items: center;
+      padding-top: 5px; }
+      .container-main__notifications--info--deadline--exclamation {
+        color: orange;
+        font-size: 12px;
+        margin-right: 5px; }
     .container-main__notifications--info:last-child {
       border-bottom: 0px; }
-    .container-main__notifications--info .container-checkbox {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-bottom: 5px; }
-      .container-main__notifications--info .container-checkbox .texto-checkbox {
-        width: 180px; }
-        .container-main__notifications--info .container-checkbox .texto-checkbox label {
-          font-weight: bold; }
-    .container-main__notifications--info .skm {
-      padding-top: 5px; }
-
-.fecha-tope {
-  display: flex;
-  align-items: center;
-  padding-top: 5px; }
-
-.exclamacion {
-  color: orange;
-  font-size: 12px;
-  margin-right: 5px; }
 
 hr {
   width: 100%;

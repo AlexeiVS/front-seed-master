@@ -10,41 +10,26 @@
     flex-direction: column;
     padding-top: 15px;
 
-    &:last-child {
-      border-bottom: 0px;
+    &--skm {
+      padding-top: 5px;
     }
 
-    .container-checkbox {
+    &--deadline {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      padding-bottom: 5px;
+      align-items: center;
+      padding-top: 5px;
 
-      .texto-checkbox {
-        width: 180px;
-
-        label {
-          font-weight: bold;
-        }
+      &--exclamation {
+        color: orange;
+        font-size: 12px;
+        margin-right: 5px;
       }
     }
 
-    .skm {
-      padding-top: 5px;
+    &:last-child {
+      border-bottom: 0px;
     }
   }
-}
-
-.fecha-tope {
-  display: flex;
-  align-items: center;
-  padding-top: 5px;
-}
-
-.exclamacion {
-  color: orange;
-  font-size: 12px;
-  margin-right: 5px;
 }
 
 hr {

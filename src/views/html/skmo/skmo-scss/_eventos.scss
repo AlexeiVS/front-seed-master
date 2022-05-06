@@ -1,42 +1,39 @@
 .container-main__events {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 300px;
+  justify-content: space-evenly;
+
+  &--info {
     display: flex;
-    flex-direction: column;
-    padding-left: 25px;
-    padding-right: 25px;
-    height: 300px;
-    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
 
     &--hour {
+      min-width: 45px;
+      min-height: 45px;
+      max-width: 45px;
+      max-height: 45px;
       display: flex;
-      flex-direction: row;
+      justify-content: center;
       align-items: center;
-    
-      .info-hora {
-        margin-left: 10px;
-    
-        .enlace-evento {
-          text-decoration: underline;
-    
-          a {
-            font-weight: bold;
-          }
+      color: white;
+      background-color: #4366a6;
+      border-radius: 50%;
+    }
+
+    &--description {
+      margin-left: 10px;
+
+      &--link {
+        text-decoration: underline;
+
+        a {
+          font-weight: bold;
         }
       }
     }
   }
-  
-  .hora {
-    min-width: 45px;
-    min-height: 45px;
-    max-width: 45px;
-    max-height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: #4366a6;
-    border-radius: 50%;
-  }
-  
-  
-  
+}
