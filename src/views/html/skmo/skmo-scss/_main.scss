@@ -1,189 +1,157 @@
 // MAIN
 
 body {
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 1)),
+      rgba(255, 255, 255, 1)
+    ),
     url(https://th.bing.com/th/id/R.57afc123c1d0b7d334c9a928a888773b?rik=JxNUOZFZ9XkvJw&riu=http%3a%2f%2fvillanuevadelfresno.hoy.es%2farchivos%2f201309%2fimg_9627.jpg&ehk=UaRB69pHxS87fQ58tjgAIT7XxV95YhrBViR1JYUmtH0%3d&risl=&pid=ImgRaw&r=0);
   background-repeat: no-repeat;
   background-size: 100% 111%;
   background-position-x: center;
-}
 
-.container-main {
-  border: none;
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: 0px 0px 10px 0px gray;
+  main {
+    .container-sections {
+      &__events,
+      &__mails,
+      &__contacts,
+      &__notifications,
+      &__projects {
+        .container-main {
+          border: none;
+          background-color: white;
+          border-radius: 6px;
+          box-shadow: 0px 0px 10px 0px gray;
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    background-color: #4366a6;
-    height: 55px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+          &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            background-color: #4366a6;
+            height: 55px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
 
-    &--icon {
-      display: flex;
-      margin-left: 25px;
+            &--icon {
+              display: flex;
+              margin-left: 25px;
 
-      &--text {
-        margin-left: 12px;
+              &--text {
+                margin-left: 12px;
+              }
+            }
+
+            &--dots {
+              margin-right: 20px;
+            }
+          }
+
+          &__menu {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+          }
+
+          &__see-more {
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            border-top: solid 1px gray;
+          }
+        }
       }
     }
-
-    &--dots {
-      margin-right: 20px;
-    }
-  }
-
-  &__menu {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  &__see-more {
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border-top: solid 1px gray;
   }
 }
-
-.eventos {
-  height: 400px;
-}
-
-.mails {
-  height: 533px;
-}
-
-.contactos {
-  height: 500px;
-}
-
-.notificaciones1 {
-  margin-top: -114px;
-  height: 400px;
-}
-
-.proyectos {
-  margin-top: 12px;
-  height: 500px;
-}
-
-// .container-main__menu {
-//   width: 100%;
-//   height: 40px;
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-// }
 
 @media (min-width: 1280px) {
   [class*="col-"] {
     padding: 12px;
   }
 
-  .container-sections {
-    &__notifications {
-      margin-top: -125px;
+  body {
+    main {
+      .container-sections {
+        &__notifications {
+          bottom: 125px;
+        }
+
+        &__projects {
+          .proyectos {
+            margin-top: 0px;
+          }
+        }
+
+        .col-xlg-3 {
+          width: 24.8%;
+        }
+
+        .col-xlg-6 {
+          width: 49.8%;
+        }
+      }
     }
-  }
-
-  .proyectos {
-    margin-top: 0px;
-  }
-
-  .col-xlg-3 {
-    width: 24.8%;
-  }
-
-  .col-xlg-6 {
-    width: 49.8%;
   }
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .col-lg-4 {
-    width: 32.8%;
-  }
-
   .container-sections {
     &__notifications {
-      margin-top: -125px;
+      bottom: 125px;
     }
 
     &__projects {
-      margin-top: -8px;
+      bottom: 8px;
     }
-  }
 
-  .proyectos {
-    .menu-encabezado-contenedores-main-proyecto {
-      .container-estados {
-        width: 100%;
-      }
+    .col-lg-4 {
+      width: 32.8%;
     }
   }
 }
 
 @media (min-width: 786px) and (max-width: 1023px) {
-  .col-md-6 {
-    width: 49.7%;
-  }
+  .container-sections {
+    .col-md-6 {
+      width: 49.7%;
+    }
 
-  .col-md-12 {
-    width: 99.9%;
-  }
+    .col-md-12 {
+      width: 99.9%;
+    }
 
-  .notificaciones1 {
-    margin-top: auto;
-  }
+    .contactos {
+      position: inherit;
+      bottom: 97px;
+    }
 
-  .contactos {
-    margin-top: -100px;
-  }
-
-  .menu-encabezado-contenedores-main-proyecto {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    .proyectos {
+      position: inherit;
+      bottom: 100px;
+    }
   }
 }
 
 @media (min-width: 600px) and (max-width: 785px) {
-  .col-sm-6 {
-    width: 49.6%;
-  }
+  .container-sections {
+    .col-sm-6 {
+      width: 49.6%;
+    }
 
-  .notificaciones1 {
-    margin-top: 0px;
-  }
-
-  .contactos {
-    margin-top: -100px;
-  }
-
-  .container-main {
-    width: 100%;
-  }
-
-  .proyectos {
-    .menu-encabezado-contenedores-main-proyecto {
-      .container-estados {
-        width: 100%;
-      }
+    .contactos {
+      bottom: 125px;
+      position: inherit;
+    }
+    
+    .proyectos {
+      position: inherit;
+      bottom: 120px;
     }
   }
 }
@@ -211,18 +179,6 @@ body {
 
     &__projects {
       order: 3;
-    }
-
-    .col-xs-12 {
-      width: 99.9%;
-    }
-
-    .notificaciones1 {
-      margin-top: auto;
-    }
-
-    .contactos {
-      margin-top: auto;
     }
   }
 }

@@ -1,353 +1,292 @@
 @charset "UTF-8";
 header {
   display: flex; }
-
-.container-background {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin: 0 0 31px;
-  padding: 13px 50px 13px 50px;
-  box-shadow: 0 2px 6px 0 rgba(153, 153, 153, 0.63);
-  background-image: linear-gradient(to left, #859603, #207e8e 50%); }
-  .container-background .container-nav {
-    width: 100%;
+  header .container-background {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between; }
-    .container-background .container-nav__big {
+    width: 100%;
+    margin: 0 0 31px;
+    padding: 13px 50px 13px 50px;
+    box-shadow: 0 2px 6px 0 rgba(153, 153, 153, 0.63);
+    background-image: linear-gradient(to left, #859603, #207e8e 50%); }
+    header .container-background .container-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between; }
+      header .container-background .container-nav__big {
+        display: flex;
+        flex-direction: row;
+        align-items: center; }
+        header .container-background .container-nav__big--logo {
+          display: flex;
+          flex-direction: row;
+          font-size: 17px; }
+          header .container-background .container-nav__big--logo .everis {
+            width: 45.5px;
+            height: 18px;
+            color: white; }
+          header .container-background .container-nav__big--logo .knowler {
+            width: 65.9px;
+            height: 18px;
+            margin: 0 0 0 0;
+            color: #fff;
+            font-weight: bold; }
+        header .container-background .container-nav__big--search {
+          width: 560px;
+          display: flex;
+          flex-direction: row; }
+          header .container-background .container-nav__big--search .rectangulo {
+            position: absolute;
+            width: 510px;
+            height: 40px;
+            margin: 4px 28px 2px;
+            padding: 9px 19.2px 10px 12px;
+            border: 0px;
+            border-radius: 4px; }
+          header .container-background .container-nav__big--search .icon {
+            position: relative;
+            padding: 16px;
+            color: black;
+            width: 525px;
+            text-align: right; }
+  header .container-nav__big--menu {
+    display: flex;
+    flex-direction: row; }
+    header .container-nav__big--menu ul {
       display: flex;
       flex-direction: row;
       align-items: center; }
-      .container-background .container-nav__big--logo {
-        display: flex;
-        flex-direction: row;
-        font-size: 17px; }
-
-.container-nav__big--logo .everis {
-  width: 45.5px;
-  height: 18px;
-  color: white; }
-.container-nav__big--logo .knowler {
-  width: 65.9px;
-  height: 18px;
-  margin: 0 0 0 0;
-  color: #fff;
-  font-weight: bold; }
-
-.container-nav__big--search {
-  width: 560px;
-  display: flex;
-  flex-direction: row; }
-  .container-nav__big--search .rectangulo {
-    position: absolute;
-    width: 510px;
-    height: 40px;
-    margin: 4px 28px 2px;
-    padding: 9px 19.2px 10px 12px;
-    border: 0px;
-    border-radius: 4px; }
-  .container-nav__big--search .icon {
-    position: relative;
-    padding: 16px;
-    color: black;
-    width: 525px;
-    text-align: right; }
-
-.container-nav__big--menu {
-  display: flex;
-  flex-direction: row; }
-  .container-nav__big--menu ul {
+      header .container-nav__big--menu ul .iconos {
+        align-self: center;
+        text-align: center;
+        padding-right: 35px; }
+      header .container-nav__big--menu ul .bi {
+        font-size: 23px; }
+      header .container-nav__big--menu ul a {
+        color: white; }
+      header .container-nav__big--menu ul p {
+        font-size: 13px; }
+  header .container-nav__big--profile {
     display: flex;
     flex-direction: row;
-    align-items: center; }
-    .container-nav__big--menu ul .iconos {
-      align-self: center;
-      text-align: center;
-      padding-right: 35px; }
-    .container-nav__big--menu ul .bi {
-      font-size: 23px; }
-    .container-nav__big--menu ul a {
-      color: white; }
-    .container-nav__big--menu ul p {
-      font-size: 13px; }
-
-.container-nav__big--profile {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 110px;
-  justify-content: space-around; }
-  .container-nav__big--profile .container-bell {
-    display: flex;
-    position: relative;
-    height: 49px;
-    width: 50px;
-    font-size: 25px;
     align-items: center;
-    justify-content: center; }
-    .container-nav__big--profile .container-bell i {
-      color: white; }
-    .container-nav__big--profile .container-bell .numero-notificaciones {
-      position: absolute;
-      color: white;
-      right: 10px;
-      top: 10px;
-      width: 15px;
-      height: 15px;
-      border-radius: 50%;
-      background-color: red;
-      text-align: center;
-      font-size: 10px;
-      font-weight: bold; }
-  .container-nav__big--profile .container-deploy {
-    color: white;
-    font-size: 15px; }
-
-.container-photo {
-  width: 35px;
-  height: 35px;
-  background: #207e8e;
-  border-radius: 50%;
-  border: solid 1px white; }
-
-.container-nav__320 {
-  display: none; }
-
-#hamburguesa {
-  display: none;
-  flex-direction: row;
-  width: 50px;
-  height: 50px;
-  padding: 10px; }
-
-#boton-menu {
-  display: none; }
-
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .container-background {
-    padding: 13px 20px 13px 20px;
-    margin: 0 0 18px; }
-    .container-background .container-nav {
-      justify-content: space-between; }
-    .container-background .logo {
-      letter-spacing: 1px;
-      font-size: 16px; }
-      .container-background .logo .everis {
-        width: 48px; }
-      .container-background .logo .knowler {
-        letter-spacing: 2px; }
-    .container-background .container-nav__big--search {
-      width: 350px; }
-      .container-background .container-nav__big--search .icon {
-        width: 335px; }
-      .container-background .container-nav__big--search .rectangulo {
-        width: 315px;
-        margin: 4px 23px 2px; }
-    .container-background .container-nav__big--menu ul .iconos {
-      padding-left: 9px;
-      padding-right: 22px; } }
-@media (min-width: 786px) and (max-width: 1023px) {
-  .container-nav__big--menu {
-    display: none; }
-
-  .container-background {
-    padding: 13px 15px 13px 15px; }
-
-  .container-nav__320 {
-    display: block; }
-    .container-nav__320--logo {
-      display: none; }
-    .container-nav__320--search {
-      display: none; }
-
-  #hamburguesa {
-    display: block;
-    font-size: 30px;
-    color: white; }
-
-  .container-nav__big--search {
-    width: auto; }
-    .container-nav__big--search .rectangulo {
-      width: 400px; }
-    .container-nav__big--search .icon {
-      width: 420px; } }
-@media (min-width: 600px) and (max-width: 785px) {
-  .container-background {
-    padding: 13px 30px 13px 30px; }
-
-  .container-nav__big--search .rectangulo {
-    width: 210px; }
-
-  .container-nav__320 {
-    display: block; }
-    .container-nav__320--logo {
-      display: none; }
-    .container-nav__320--search {
-      display: none; }
-
-  #hamburguesa {
-    display: block;
-    font-size: 30px;
-    color: white; }
-
-  .container-nav__big--menu {
-    display: none; }
-
-  .container-nav__big--search {
-    width: 265px; }
-    .container-nav__big--search .icon {
-      width: 235px; } }
-@media (min-width: 320px) and (max-width: 599px) {
-  .container-background {
-    padding: 3px 15px 13px 3px;
-    margin: 0; }
-    .container-background .container-nav__big {
-      display: none; }
-
-  .container-nav__big--search {
-    display: none; }
-
-  .container-nav__big--menu {
-    display: none; }
-
-  .container-nav__320 {
-    display: flex; }
-    .container-nav__320--burger {
-      display: block; }
-    .container-nav__320--logo {
+    width: 110px;
+    justify-content: space-around; }
+    header .container-nav__big--profile .container-bell {
       display: flex;
-      align-items: center;
+      position: relative;
+      height: 49px;
       width: 50px;
-      margin-top: 10px; }
-    .container-nav__320--search {
+      font-size: 25px;
+      align-items: center;
+      justify-content: center; }
+      header .container-nav__big--profile .container-bell i {
+        color: white; }
+      header .container-nav__big--profile .container-bell .numero-notificaciones {
+        position: absolute;
+        color: white;
+        right: 10px;
+        top: 10px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: red;
+        text-align: center;
+        font-size: 10px;
+        font-weight: bold; }
+    header .container-nav__big--profile .container-deploy {
       color: white;
-      font-size: 20px; }
+      font-size: 15px; }
+  header .container-photo {
+    width: 35px;
+    height: 35px;
+    background: #207e8e;
+    border-radius: 50%;
+    border: solid 1px white; }
+  header .container-nav__320 {
+    display: none; }
+  header #hamburguesa {
+    display: none;
+    flex-direction: row;
+    width: 50px;
+    height: 50px;
+    padding: 10px; }
+  header #boton-menu {
+    display: none; }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    header .container-background {
+      padding: 13px 20px 13px 20px;
+      margin: 0 0 18px; }
+      header .container-background .container-nav {
+        justify-content: space-between; }
+      header .container-background .logo {
+        letter-spacing: 1px;
+        font-size: 16px; }
+        header .container-background .logo .everis {
+          width: 48px; }
+        header .container-background .logo .knowler {
+          letter-spacing: 2px; }
+      header .container-background .container-nav__big--search {
+        width: 350px; }
+        header .container-background .container-nav__big--search .icon {
+          width: 335px; }
+        header .container-background .container-nav__big--search .rectangulo {
+          width: 315px;
+          margin: 4px 23px 2px; }
+      header .container-background .container-nav__big--menu ul .iconos {
+        padding-left: 9px;
+        padding-right: 22px; } }
+  @media (min-width: 786px) and (max-width: 1023px) {
+    header .container-background {
+      padding: 13px 15px 13px 15px; }
+      header .container-background .container-nav__320 {
+        display: block; }
+        header .container-background .container-nav__320--burger #hamburguesa {
+          display: block;
+          font-size: 30px;
+          color: white; }
+        header .container-background .container-nav__320--logo {
+          display: none; }
+        header .container-background .container-nav__320--search {
+          display: none; }
+      header .container-background .container-nav__big--menu {
+        display: none; }
+      header .container-background .container-nav__big--search {
+        width: auto; }
+        header .container-background .container-nav__big--search .rectangulo {
+          width: 400px; }
+        header .container-background .container-nav__big--search .icon {
+          width: 420px; } }
+  @media (min-width: 600px) and (max-width: 785px) {
+    header .container-background {
+      padding: 13px 30px 13px 30px; }
+      header .container-background .container-nav__big--menu {
+        display: none; }
+      header .container-background .container-nav__big--search {
+        width: 265px; }
+        header .container-background .container-nav__big--search .icon {
+          width: 235px; }
+        header .container-background .container-nav__big--search .rectangulo {
+          width: 210px; }
+      header .container-background .container-nav__320 {
+        display: block; }
+        header .container-background .container-nav__320--burger #hamburguesa {
+          display: block;
+          font-size: 30px;
+          color: white; }
+        header .container-background .container-nav__320--logo {
+          display: none; }
+        header .container-background .container-nav__320--search {
+          display: none; } }
+  @media (min-width: 320px) and (max-width: 599px) {
+    header .container-background {
+      padding: 3px 15px 13px 3px;
+      margin: 0; }
+      header .container-background .container-nav__big {
+        display: none; }
+        header .container-background .container-nav__big--search {
+          display: none; }
+        header .container-background .container-nav__big--menu {
+          display: none; }
+      header .container-background .container-nav__320 {
+        display: flex; }
+        header .container-background .container-nav__320--burger {
+          display: block; }
+          header .container-background .container-nav__320--burger #hamburguesa {
+            display: block;
+            font-size: 30px;
+            color: white; }
+        header .container-background .container-nav__320--logo {
+          display: flex;
+          align-items: center;
+          width: 50px;
+          margin-top: 10px; }
+        header .container-background .container-nav__320--search {
+          color: white;
+          font-size: 20px; } }
 
-  #hamburguesa {
-    display: block;
-    font-size: 30px;
-    color: white; } }
 body {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white), url(https://th.bing.com/th/id/R.57afc123c1d0b7d334c9a928a888773b?rik=JxNUOZFZ9XkvJw&riu=http%3a%2f%2fvillanuevadelfresno.hoy.es%2farchivos%2f201309%2fimg_9627.jpg&ehk=UaRB69pHxS87fQ58tjgAIT7XxV95YhrBViR1JYUmtH0%3d&risl=&pid=ImgRaw&r=0);
   background-repeat: no-repeat;
   background-size: 100% 111%;
   background-position-x: center; }
-
-.container-main {
-  border: none;
-  background-color: white;
-  border-radius: 6px;
-  box-shadow: 0px 0px 10px 0px gray; }
-  .container-main__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    background-color: #4366a6;
-    height: 55px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px; }
-    .container-main__header--icon {
+  body main .container-sections__events .container-main, body main .container-sections__mails .container-main, body main .container-sections__contacts .container-main, body main .container-sections__notifications .container-main, body main .container-sections__projects .container-main {
+    border: none;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px 0px gray; }
+    body main .container-sections__events .container-main__header, body main .container-sections__mails .container-main__header, body main .container-sections__contacts .container-main__header, body main .container-sections__notifications .container-main__header, body main .container-sections__projects .container-main__header {
       display: flex;
-      margin-left: 25px; }
-      .container-main__header--icon--text {
-        margin-left: 12px; }
-    .container-main__header--dots {
-      margin-right: 20px; }
-  .container-main__menu {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-  .container-main__see-more {
-    height: 45px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border-top: solid 1px gray; }
-
-.eventos {
-  height: 400px; }
-
-.mails {
-  height: 533px; }
-
-.contactos {
-  height: 500px; }
-
-.notificaciones1 {
-  margin-top: -114px;
-  height: 400px; }
-
-.proyectos {
-  margin-top: 12px;
-  height: 500px; }
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      background-color: #4366a6;
+      height: 55px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+      body main .container-sections__events .container-main__header--icon, body main .container-sections__mails .container-main__header--icon, body main .container-sections__contacts .container-main__header--icon, body main .container-sections__notifications .container-main__header--icon, body main .container-sections__projects .container-main__header--icon {
+        display: flex;
+        margin-left: 25px; }
+        body main .container-sections__events .container-main__header--icon--text, body main .container-sections__mails .container-main__header--icon--text, body main .container-sections__contacts .container-main__header--icon--text, body main .container-sections__notifications .container-main__header--icon--text, body main .container-sections__projects .container-main__header--icon--text {
+          margin-left: 12px; }
+      body main .container-sections__events .container-main__header--dots, body main .container-sections__mails .container-main__header--dots, body main .container-sections__contacts .container-main__header--dots, body main .container-sections__notifications .container-main__header--dots, body main .container-sections__projects .container-main__header--dots {
+        margin-right: 20px; }
+    body main .container-sections__events .container-main__menu, body main .container-sections__mails .container-main__menu, body main .container-sections__contacts .container-main__menu, body main .container-sections__notifications .container-main__menu, body main .container-sections__projects .container-main__menu {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    body main .container-sections__events .container-main__see-more, body main .container-sections__mails .container-main__see-more, body main .container-sections__contacts .container-main__see-more, body main .container-sections__notifications .container-main__see-more, body main .container-sections__projects .container-main__see-more {
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      border-top: solid 1px gray; }
 
 @media (min-width: 1280px) {
   [class*="col-"] {
     padding: 12px; }
 
-  .container-sections__notifications {
-    margin-top: -125px; }
-
-  .proyectos {
+  body main .container-sections__notifications {
+    bottom: 125px; }
+  body main .container-sections__projects .proyectos {
     margin-top: 0px; }
-
-  .col-xlg-3 {
+  body main .container-sections .col-xlg-3 {
     width: 24.8%; }
-
-  .col-xlg-6 {
+  body main .container-sections .col-xlg-6 {
     width: 49.8%; } }
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .col-lg-4 {
-    width: 32.8%; }
-
   .container-sections__notifications {
-    margin-top: -125px; }
+    bottom: 125px; }
   .container-sections__projects {
-    margin-top: -8px; }
-
-  .proyectos .menu-encabezado-contenedores-main-proyecto .container-estados {
-    width: 100%; } }
+    bottom: 8px; }
+  .container-sections .col-lg-4 {
+    width: 32.8%; } }
 @media (min-width: 786px) and (max-width: 1023px) {
-  .col-md-6 {
+  .container-sections .col-md-6 {
     width: 49.7%; }
-
-  .col-md-12 {
+  .container-sections .col-md-12 {
     width: 99.9%; }
-
-  .notificaciones1 {
-    margin-top: auto; }
-
-  .contactos {
-    margin-top: -100px; }
-
-  .menu-encabezado-contenedores-main-proyecto {
-    width: 100%;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; } }
+  .container-sections .contactos {
+    position: inherit;
+    bottom: 97px; }
+  .container-sections .proyectos {
+    position: inherit;
+    bottom: 100px; } }
 @media (min-width: 600px) and (max-width: 785px) {
-  .col-sm-6 {
+  .container-sections .col-sm-6 {
     width: 49.6%; }
-
-  .notificaciones1 {
-    margin-top: 0px; }
-
-  .contactos {
-    margin-top: -100px; }
-
-  .container-main {
-    width: 100%; }
-
-  .proyectos .menu-encabezado-contenedores-main-proyecto .container-estados {
-    width: 100%; } }
+  .container-sections .contactos {
+    bottom: 125px;
+    position: inherit; }
+  .container-sections .proyectos {
+    position: inherit;
+    bottom: 120px; } }
 @media (min-width: 320px) and (max-width: 599px) {
   .container-sections {
     display: flex;
@@ -361,25 +300,19 @@ body {
     .container-sections__notifications {
       order: 1; }
     .container-sections__projects {
-      order: 3; }
-    .container-sections .col-xs-12 {
-      width: 99.9%; }
-    .container-sections .notificaciones1 {
-      margin-top: auto; }
-    .container-sections .contactos {
-      margin-top: auto; } }
-.container-main__events {
+      order: 3; } }
+main .container-main__events {
   display: flex;
   flex-direction: column;
   padding-left: 25px;
   padding-right: 25px;
   height: 300px;
   justify-content: space-evenly; }
-  .container-main__events--info {
+  main .container-main__events--info {
     display: flex;
     flex-direction: row;
     align-items: center; }
-    .container-main__events--info--hour {
+    main .container-main__events--info--hour {
       min-width: 45px;
       min-height: 45px;
       max-width: 45px;
@@ -390,11 +323,11 @@ body {
       color: white;
       background-color: #4366a6;
       border-radius: 50%; }
-    .container-main__events--info--description {
+    main .container-main__events--info--description {
       margin-left: 10px; }
-      .container-main__events--info--description--link {
+      main .container-main__events--info--description--link {
         text-decoration: underline; }
-        .container-main__events--info--description--link a {
+        main .container-main__events--info--description--link a {
           font-weight: bold; }
 
 .container-main__mails {
@@ -485,97 +418,89 @@ body {
     .container-main__contacts--profile:last-child {
       border-bottom: 0px; }
 
-.container-main__notifications {
-  display: flex;
-  flex-direction: column;
-  padding-left: 25px;
-  padding-right: 25px;
-  height: 300px; }
-  .container-main__notifications--info {
+main .container-main {
+  /********* CHECKBOX PERSONALIZADO **********/
+  /* El contenedor */
+  /* Ocultar la casilla de verificación predeterminada del navegador */
+  /* Crear una casilla de verificación personalizada */
+  /* Al pasar el ratón por encima, agregue un color de fondo verde */
+  /* Cuando la casilla de verificación esté marcada, agregue un fondo blanco */
+  /* Crear la marca de verificación / indicador (oculto cuando no está marcado) */
+  /* Mostrar la marca de verificación cuando está marcada */
+  /* Aplicar estilo a la marca de verificación / indicador */ }
+  main .container-main__notifications {
     display: flex;
     flex-direction: column;
-    padding-top: 15px; }
-    .container-main__notifications--info--skm {
-      padding-top: 5px; }
-    .container-main__notifications--info--deadline {
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 300px; }
+    main .container-main__notifications--info {
       display: flex;
-      align-items: center;
-      padding-top: 5px; }
-      .container-main__notifications--info--deadline--exclamation {
-        color: orange;
-        font-size: 12px;
-        margin-right: 5px; }
-    .container-main__notifications--info:last-child {
-      border-bottom: 0px; }
+      flex-direction: column;
+      padding-top: 15px; }
+      main .container-main__notifications--info--skm {
+        padding-top: 5px; }
+      main .container-main__notifications--info--deadline {
+        display: flex;
+        align-items: center;
+        padding-top: 5px; }
+        main .container-main__notifications--info--deadline--exclamation {
+          color: orange;
+          font-size: 12px;
+          margin-right: 5px; }
+      main .container-main__notifications--info:last-child {
+        border-bottom: 0px; }
+  main .container-main hr {
+    width: 100%;
+    height: 0.5px; }
+  main .container-main .container {
+    display: block;
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  main .container-main .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  main .container-main .checkmark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    /*background-color: blue;*/
+    border: solid 2px #bdc582; }
+  main .container-main .container:hover input ~ .checkmark {
+    background-color: #bdc582; }
+  main .container-main .container input:checked ~ .checkmark {
+    background-color: white; }
+  main .container-main .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none; }
+  main .container-main .container input:checked ~ .checkmark:after {
+    display: block; }
+  main .container-main .container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid #bdc582;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
 
-hr {
-  width: 100%;
-  height: 0.5px; }
-
-/********* CHECKBOX PERSONALIZADO **********/
-/* El contenedor */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 0;
-  margin-bottom: 0;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-/* Ocultar la casilla de verificación predeterminada del navegador */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0; }
-
-/* Crear una casilla de verificación personalizada */
-.checkmark {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 20px;
-  width: 20px;
-  /*background-color: blue;*/
-  border: solid 2px #bdc582; }
-
-/* Al pasar el ratón por encima, agregue un color de fondo verde */
-.container:hover input ~ .checkmark {
-  background-color: #bdc582; }
-
-/* Cuando la casilla de verificación esté marcada, agregue un fondo blanco */
-.container input:checked ~ .checkmark {
-  background-color: white; }
-
-/* Crear la marca de verificación / indicador (oculto cuando no está marcado) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none; }
-
-/* Mostrar la marca de verificación cuando está marcada */
-.container input:checked ~ .checkmark:after {
-  display: block; }
-
-/* Aplicar estilo a la marca de verificación / indicador */
-.container .checkmark:after {
-  left: 6px;
-  top: 3px;
-  width: 5px;
-  height: 10px;
-  border: solid #bdc582;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-.container-main__menu {
+.container-sections .container-main__menu {
   width: 100%;
   height: 40px;
   display: flex;
@@ -583,46 +508,45 @@ hr {
   flex-wrap: wrap;
   background-color: #e3e8f2;
   color: #4366a6; }
-  .container-main__menu--status {
+  .container-sections .container-main__menu--status {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     width: 65%; }
-    .container-main__menu--status .status-project {
+    .container-sections .container-main__menu--status .status-project {
       display: flex;
       justify-content: center;
       height: 43px;
       align-items: center;
       width: calc(100% / 3); }
-      .container-main__menu--status .status-project:first-child {
+      .container-sections .container-main__menu--status .status-project:first-child {
         border-bottom: 2px solid #4366a6; }
-        .container-main__menu--status .status-project:first-child a {
+        .container-sections .container-main__menu--status .status-project:first-child a {
           font-weight: bold; }
-
-.container-main__projects {
+.container-sections .container-main__projects {
   display: flex;
   flex-direction: column;
   height: 353px;
   padding-left: 25px;
   padding-right: 25px; }
-  .container-main__projects--info {
+  .container-sections .container-main__projects--info {
     display: flex;
     flex-direction: column;
     height: calc(100% / 3);
     border-bottom: 1px solid gray; }
-    .container-main__projects--info--name {
+    .container-sections .container-main__projects--info--name {
       padding-top: 20px;
       text-decoration: underline; }
-      .container-main__projects--info--name a {
+      .container-sections .container-main__projects--info--name a {
         font-weight: bold; }
-    .container-main__projects--info--type {
+    .container-sections .container-main__projects--info--type {
       padding-top: 8px; }
-    .container-main__projects--info--buttons {
+    .container-sections .container-main__projects--info--buttons {
       padding-top: 10px;
       display: flex;
       flex-direction: row; }
-      .container-main__projects--info--buttons--button-one {
+      .container-sections .container-main__projects--info--buttons--button-one {
         width: 60px;
         height: 25px;
         border-radius: 12px;
@@ -633,7 +557,7 @@ hr {
         align-items: center;
         font-size: 12px;
         margin-right: 13px; }
-      .container-main__projects--info--buttons--button-two {
+      .container-sections .container-main__projects--info--buttons--button-two {
         width: 125px;
         height: 25px;
         border-radius: 12px;
@@ -644,7 +568,7 @@ hr {
         align-items: center;
         font-size: 12px;
         margin-right: 13px; }
-      .container-main__projects--info--buttons--button-three {
+      .container-sections .container-main__projects--info--buttons--button-three {
         width: 35px;
         height: 25px;
         border-radius: 12px;
@@ -654,43 +578,39 @@ hr {
         justify-content: center;
         align-items: center;
         font-size: 12px; }
-    .container-main__projects--info:last-child {
+    .container-sections .container-main__projects--info:last-child {
       border-bottom: 0px; }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .container-main__menu--status {
+  .container-sections__projects .container-main__menu--status {
     width: 100%; } }
 @media (min-width: 600px) and (max-width: 785px) {
-  .container-main__menu {
+  .container-sections__projects .container-main__menu {
     width: 100%; }
-    .container-main__menu--status {
+    .container-sections__projects .container-main__menu--status {
       display: flex;
       justify-content: space-around;
       width: 100%; }
-      .container-main__menu--status .current {
+      .container-sections__projects .container-main__menu--status .current {
         order: 1; }
-      .container-main__menu--status .related {
+      .container-sections__projects .container-main__menu--status .related {
         order: 3; }
-      .container-main__menu--status .closed {
+      .container-sections__projects .container-main__menu--status .closed {
         order: 2; } }
 @media (min-width: 320px) and (max-width: 599px) {
-  .container-main__menu--status {
+  .container-sections__projects .container-main__menu--status {
     width: 100%; }
-
-  .current {
+  .container-sections__projects .container-main__menu .current {
     order: 1; }
-
-  .related {
+  .container-sections__projects .container-main__menu .related {
     order: 3; }
-
-  .closed {
+  .container-sections__projects .container-main__menu .closed {
     order: 2; }
-
-  .container-main__projects--info--buttons--button-one {
+  .container-sections__projects .container-main__menu__projects--info--buttons--button-one {
     font-size: 10px; }
-  .container-main__projects--info--buttons--button-two {
+  .container-sections__projects .container-main__menu__projects--info--buttons--button-two {
     font-size: 10px; }
-  .container-main__projects--info--buttons--button-three {
+  .container-sections__projects .container-main__menu__projects--info--buttons--button-three {
     font-size: 10px; } }
 
 /*# sourceMappingURL=skmo-modules.css.map */

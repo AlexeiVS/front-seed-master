@@ -1,177 +1,192 @@
-.container-main__menu {
-  width: 100%;
-  height: 40px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #e3e8f2;
-  color: #4366a6;
-
-  &--status {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 65%;
-
-    .status-project {
+.container-sections {
+  .container-main {
+    &__menu {
+      width: 100%;
+      height: 40px;
       display: flex;
-      justify-content: center;
-      height: 43px;
-      align-items: center;
-      width: calc(100% / 3);
+      flex-direction: row;
+      flex-wrap: wrap;
+      background-color: #e3e8f2;
+      color: #4366a6;
 
-      &:first-child {
-        border-bottom: 2px solid #4366a6;
-        a {
-          font-weight: bold;
+      &--status {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 65%;
+
+        .status-project {
+          display: flex;
+          justify-content: center;
+          height: 43px;
+          align-items: center;
+          width: calc(100% / 3);
+
+          &:first-child {
+            border-bottom: 2px solid #4366a6;
+            a {
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    &__projects {
+      display: flex;
+      flex-direction: column;
+      height: 353px;
+      padding-left: 25px;
+      padding-right: 25px;
+
+      &--info {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% / 3);
+        border-bottom: 1px solid gray;
+
+        &--name {
+          padding-top: 20px;
+          text-decoration: underline;
+
+          a {
+            font-weight: bold;
+          }
+        }
+
+        &--type {
+          padding-top: 8px;
+        }
+
+        &--buttons {
+          padding-top: 10px;
+          display: flex;
+          flex-direction: row;
+
+          &--button-one {
+            width: 60px;
+            height: 25px;
+            border-radius: 12px;
+            background-color: #e8eeb3;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            margin-right: 13px;
+          }
+
+          &--button-two {
+            width: 125px;
+            height: 25px;
+            border-radius: 12px;
+            background-color: #e8eeb3;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            margin-right: 13px;
+          }
+
+          &--button-three {
+            width: 35px;
+            height: 25px;
+            border-radius: 12px;
+            border: 2px solid #e8eeb3;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+          }
+        }
+
+        &:last-child {
+          border-bottom: 0px;
         }
       }
     }
   }
 }
 
-.container-main__projects {
-  display: flex;
-  flex-direction: column;
-  height: 353px;
-  padding-left: 25px;
-  padding-right: 25px;
-
-  &--info {
-    display: flex;
-    flex-direction: column;
-    height: calc(100% / 3);
-    border-bottom: 1px solid gray;
-
-    &--name {
-      padding-top: 20px;
-      text-decoration: underline;
-
-      a {
-        font-weight: bold;
-      }
-    }
-
-    &--type {
-      padding-top: 8px;
-    }
-
-    &--buttons {
-      padding-top: 10px;
-      display: flex;
-      flex-direction: row;
-
-      &--button-one {
-        width: 60px;
-        height: 25px;
-        border-radius: 12px;
-        background-color: #e8eeb3;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-        margin-right: 13px;
-      }
-
-      &--button-two {
-        width: 125px;
-        height: 25px;
-        border-radius: 12px;
-        background-color: #e8eeb3;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-        margin-right: 13px;
-      }
-
-      &--button-three {
-        width: 35px;
-        height: 25px;
-        border-radius: 12px;
-        border: 2px solid #e8eeb3;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 12px;
-      }
-    }
-
-    &:last-child {
-      border-bottom: 0px;
-    }
-  }
-}
-
 @media (min-width: 1024px) and (max-width: 1279px) {
-
-  .container-main {
-    &__menu {
-      &--status {
-        width: 100%;
+  .container-sections__projects {
+    .container-main {
+      &__menu {
+        &--status {
+          width: 100%;
+        }
       }
     }
   }
 }
 
 @media (min-width: 600px) and (max-width: 785px) {
-  .container-main__menu {
-    width: 100%;
+  .container-sections__projects {
+    .container-main {
+      &__menu {
+        width: 100%;
 
-    &--status {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
+        &--status {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
 
-      .current {
-        order: 1;
-      }
+          .current {
+            order: 1;
+          }
 
-      .related {
-        order: 3;
-      }
+          .related {
+            order: 3;
+          }
 
-      .closed {
-        order: 2;
+          .closed {
+            order: 2;
+          }
+        }
       }
     }
   }
 }
 
 @media (min-width: 320px) and (max-width: 599px) {
-  .container-main__menu--status {
-    width: 100%;
-  }
-
-  .current {
-    order: 1;
-  }
-
-  .related {
-    order: 3;
-  }
-
-  .closed {
-    order: 2;
-  }
-
-  .container-main__projects {
-    &--info {
-      &--buttons {
-        &--button-one {
-          font-size: 10px;
+  .container-sections__projects {
+    .container-main {
+      &__menu {
+        &--status {
+          width: 100%;
         }
 
-        &--button-two {
-          font-size: 10px;
+        .current {
+          order: 1;
         }
 
-        &--button-three {
-          font-size: 10px;
+        .related {
+          order: 3;
+        }
+
+        .closed {
+          order: 2;
+        }
+
+        &__projects {
+          &--info {
+            &--buttons {
+              &--button-one {
+                font-size: 10px;
+              }
+
+              &--button-two {
+                font-size: 10px;
+              }
+
+              &--button-three {
+                font-size: 10px;
+              }
+            }
+          }
         }
       }
     }
