@@ -52,60 +52,60 @@ header {
             color: black;
             width: 525px;
             text-align: right; }
-  header .container-nav__big--menu {
-    display: flex;
-    flex-direction: row; }
-    header .container-nav__big--menu ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center; }
-      header .container-nav__big--menu ul .iconos {
-        align-self: center;
-        text-align: center;
-        padding-right: 35px; }
-      header .container-nav__big--menu ul .bi {
-        font-size: 23px; }
-      header .container-nav__big--menu ul a {
-        color: white; }
-      header .container-nav__big--menu ul p {
-        font-size: 13px; }
-  header .container-nav__big--profile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 110px;
-    justify-content: space-around; }
-    header .container-nav__big--profile .container-bell {
-      display: flex;
-      position: relative;
-      height: 49px;
-      width: 50px;
-      font-size: 25px;
-      align-items: center;
-      justify-content: center; }
-      header .container-nav__big--profile .container-bell i {
-        color: white; }
-      header .container-nav__big--profile .container-bell .numero-notificaciones {
-        position: absolute;
-        color: white;
-        right: 10px;
-        top: 10px;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: red;
-        text-align: center;
-        font-size: 10px;
-        font-weight: bold; }
-    header .container-nav__big--profile .container-deploy {
-      color: white;
-      font-size: 15px; }
-  header .container-photo {
-    width: 35px;
-    height: 35px;
-    background: #207e8e;
-    border-radius: 50%;
-    border: solid 1px white; }
+        header .container-background .container-nav__big--menu {
+          display: flex;
+          flex-direction: row; }
+          header .container-background .container-nav__big--menu ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center; }
+            header .container-background .container-nav__big--menu ul .iconos {
+              align-self: center;
+              text-align: center;
+              padding-right: 35px; }
+            header .container-background .container-nav__big--menu ul .bi {
+              font-size: 23px; }
+            header .container-background .container-nav__big--menu ul a {
+              color: white; }
+            header .container-background .container-nav__big--menu ul p {
+              font-size: 13px; }
+      header .container-background .container-nav__big--profile {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 110px;
+        justify-content: space-around; }
+        header .container-background .container-nav__big--profile .container-bell {
+          display: flex;
+          position: relative;
+          height: 49px;
+          width: 50px;
+          font-size: 25px;
+          align-items: center;
+          justify-content: center; }
+          header .container-background .container-nav__big--profile .container-bell i {
+            color: white; }
+          header .container-background .container-nav__big--profile .container-bell .numero-notificaciones {
+            position: absolute;
+            color: white;
+            right: 10px;
+            top: 10px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: red;
+            text-align: center;
+            font-size: 10px;
+            font-weight: bold; }
+        header .container-background .container-nav__big--profile .container-photo {
+          width: 35px;
+          height: 35px;
+          background: #207e8e;
+          border-radius: 50%;
+          border: solid 1px white; }
+        header .container-background .container-nav__big--profile .container-deploy {
+          color: white;
+          font-size: 15px; }
   header .container-nav__320 {
     display: none; }
   header #hamburguesa {
@@ -122,23 +122,23 @@ header {
       margin: 0 0 18px; }
       header .container-background .container-nav {
         justify-content: space-between; }
+        header .container-background .container-nav__big--search {
+          width: 350px; }
+          header .container-background .container-nav__big--search .icon {
+            width: 335px; }
+          header .container-background .container-nav__big--search .rectangulo {
+            width: 315px;
+            margin: 4px 23px 2px; }
+        header .container-background .container-nav__big--menu ul .iconos {
+          padding-left: 9px;
+          padding-right: 22px; }
       header .container-background .logo {
         letter-spacing: 1px;
         font-size: 16px; }
         header .container-background .logo .everis {
           width: 48px; }
         header .container-background .logo .knowler {
-          letter-spacing: 2px; }
-      header .container-background .container-nav__big--search {
-        width: 350px; }
-        header .container-background .container-nav__big--search .icon {
-          width: 335px; }
-        header .container-background .container-nav__big--search .rectangulo {
-          width: 315px;
-          margin: 4px 23px 2px; }
-      header .container-background .container-nav__big--menu ul .iconos {
-        padding-left: 9px;
-        padding-right: 22px; } }
+          letter-spacing: 2px; } }
   @media (min-width: 786px) and (max-width: 1023px) {
     header .container-background {
       padding: 13px 15px 13px 15px; }
@@ -301,18 +301,18 @@ body {
       order: 1; }
     .container-sections__projects {
       order: 3; } }
-main .container-main__events {
+main .container-sections__events .container-main__events {
   display: flex;
   flex-direction: column;
   padding-left: 25px;
   padding-right: 25px;
   height: 300px;
   justify-content: space-evenly; }
-  main .container-main__events--info {
+  main .container-sections__events .container-main__events--info {
     display: flex;
     flex-direction: row;
     align-items: center; }
-    main .container-main__events--info--hour {
+    main .container-sections__events .container-main__events--info--hour {
       min-width: 45px;
       min-height: 45px;
       max-width: 45px;
@@ -323,11 +323,11 @@ main .container-main__events {
       color: white;
       background-color: #4366a6;
       border-radius: 50%; }
-    main .container-main__events--info--description {
+    main .container-sections__events .container-main__events--info--description {
       margin-left: 10px; }
-      main .container-main__events--info--description--link {
+      main .container-sections__events .container-main__events--info--description--link {
         text-decoration: underline; }
-        main .container-main__events--info--description--link a {
+        main .container-sections__events .container-main__events--info--description--link a {
           font-weight: bold; }
 
 .container-main__mails {
@@ -367,58 +367,58 @@ main .container-main__events {
       text-overflow: ellipsis;
       text-align: justify; }
 
-.container-main__menu {
+main .container-main__menu {
   display: flex;
   background-color: #e3e8f2;
   color: #4366a6; }
-  .container-main__menu--list-contacts {
+  main .container-main__menu--list-contacts {
     display: flex;
     width: 100%;
     justify-content: space-around; }
-  .container-main__menu nav {
+  main .container-main__menu nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 100%; }
-    .container-main__menu nav li:first-child {
+    main .container-main__menu nav li:first-child {
       font-weight: bold; }
-.container-main__contacts {
+main .container-main__contacts {
   display: flex;
   flex-direction: column;
   overflow: overlay;
   height: 400px;
   padding-left: 25px;
   padding-right: 25px; }
-  .container-main__contacts--profile {
+  main .container-main__contacts--profile {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid gray;
     margin-top: 14px;
     padding-bottom: 14px; }
-    .container-main__contacts--profile--info {
+    main .container-main__contacts--profile--info {
       display: flex;
       flex-direction: row; }
-      .container-main__contacts--profile--info--photo {
+      main .container-main__contacts--profile--info--photo {
         max-width: 40px;
         min-width: 40px;
         max-height: 40px;
         min-height: 40px;
         border-radius: 50%; }
-        .container-main__contacts--profile--info--photo img {
+        main .container-main__contacts--profile--info--photo img {
           border-radius: 50%;
           border: 1px solid; }
-      .container-main__contacts--profile--info--description {
+      main .container-main__contacts--profile--info--description {
         margin-left: 14px;
         padding-top: 3px;
         display: flex;
         flex-direction: column;
         justify-content: space-between; }
-        .container-main__contacts--profile--info--description--name {
+        main .container-main__contacts--profile--info--description--name {
           text-decoration: underline; }
-    .container-main__contacts--profile:last-child {
+    main .container-main__contacts--profile:last-child {
       border-bottom: 0px; }
 
-main .container-main {
+main .container-sections__notifications .container-main {
   /********* CHECKBOX PERSONALIZADO **********/
   /* El contenedor */
   /* Ocultar la casilla de verificación predeterminada del navegador */
@@ -428,32 +428,32 @@ main .container-main {
   /* Crear la marca de verificación / indicador (oculto cuando no está marcado) */
   /* Mostrar la marca de verificación cuando está marcada */
   /* Aplicar estilo a la marca de verificación / indicador */ }
-  main .container-main__notifications {
+  main .container-sections__notifications .container-main__notifications {
     display: flex;
     flex-direction: column;
     padding-left: 25px;
     padding-right: 25px;
     height: 300px; }
-    main .container-main__notifications--info {
+    main .container-sections__notifications .container-main__notifications--info {
       display: flex;
       flex-direction: column;
       padding-top: 15px; }
-      main .container-main__notifications--info--skm {
+      main .container-sections__notifications .container-main__notifications--info--skm {
         padding-top: 5px; }
-      main .container-main__notifications--info--deadline {
+      main .container-sections__notifications .container-main__notifications--info--deadline {
         display: flex;
         align-items: center;
         padding-top: 5px; }
-        main .container-main__notifications--info--deadline--exclamation {
+        main .container-sections__notifications .container-main__notifications--info--deadline--exclamation {
           color: orange;
           font-size: 12px;
           margin-right: 5px; }
-      main .container-main__notifications--info:last-child {
+      main .container-sections__notifications .container-main__notifications--info:last-child {
         border-bottom: 0px; }
-  main .container-main hr {
+  main .container-sections__notifications .container-main hr {
     width: 100%;
     height: 0.5px; }
-  main .container-main .container {
+  main .container-sections__notifications .container-main .container {
     display: block;
     position: relative;
     padding-left: 0;
@@ -465,13 +465,13 @@ main .container-main {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
-  main .container-main .container input {
+  main .container-sections__notifications .container-main .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0; }
-  main .container-main .checkmark {
+  main .container-sections__notifications .container-main .checkmark {
     position: absolute;
     top: 0;
     right: 0;
@@ -479,17 +479,17 @@ main .container-main {
     width: 20px;
     /*background-color: blue;*/
     border: solid 2px #bdc582; }
-  main .container-main .container:hover input ~ .checkmark {
+  main .container-sections__notifications .container-main .container:hover input ~ .checkmark {
     background-color: #bdc582; }
-  main .container-main .container input:checked ~ .checkmark {
+  main .container-sections__notifications .container-main .container input:checked ~ .checkmark {
     background-color: white; }
-  main .container-main .checkmark:after {
+  main .container-sections__notifications .container-main .checkmark:after {
     content: "";
     position: absolute;
     display: none; }
-  main .container-main .container input:checked ~ .checkmark:after {
+  main .container-sections__notifications .container-main .container input:checked ~ .checkmark:after {
     display: block; }
-  main .container-main .container .checkmark:after {
+  main .container-sections__notifications .container-main .container .checkmark:after {
     left: 6px;
     top: 3px;
     width: 5px;
@@ -545,7 +545,8 @@ main .container-main {
     .container-sections .container-main__projects--info--buttons {
       padding-top: 10px;
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      text-align: center; }
       .container-sections .container-main__projects--info--buttons--button-one {
         width: 60px;
         height: 25px;

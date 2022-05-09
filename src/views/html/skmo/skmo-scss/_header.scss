@@ -68,86 +68,88 @@ header {
             text-align: right;
           }
         }
+
+        &--menu {
+          display: flex;
+          flex-direction: row;
+
+          ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .iconos {
+              align-self: center;
+              text-align: center;
+              padding-right: 35px;
+            }
+
+            .bi {
+              font-size: 23px;
+            }
+
+            a {
+              color: white;
+            }
+
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+
+      &__big {
+        &--profile {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 110px;
+          justify-content: space-around;
+
+          .container-bell {
+            display: flex;
+            position: relative;
+            height: 49px;
+            width: 50px;
+            font-size: 25px;
+            align-items: center;
+            justify-content: center;
+
+            i {
+              color: white;
+            }
+
+            .numero-notificaciones {
+              position: absolute;
+              color: white;
+              right: 10px;
+              top: 10px;
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              background-color: red;
+              text-align: center;
+              font-size: 10px;
+              font-weight: bold;
+            }
+          }
+
+          .container-photo {
+            width: 35px;
+            height: 35px;
+            background: #207e8e;
+            border-radius: 50%;
+            border: solid 1px white;
+          }
+
+          .container-deploy {
+            color: white;
+            font-size: 15px;
+          }
+        }
       }
     }
-  }
-
-  .container-nav__big--menu {
-    display: flex;
-    flex-direction: row;
-
-    ul {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      .iconos {
-        align-self: center;
-        text-align: center;
-        padding-right: 35px;
-      }
-
-      .bi {
-        font-size: 23px;
-      }
-
-      a {
-        color: white;
-      }
-
-      p {
-        font-size: 13px;
-      }
-    }
-  }
-
-  .container-nav__big--profile {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 110px;
-    justify-content: space-around;
-
-    .container-bell {
-      display: flex;
-      position: relative;
-      height: 49px;
-      width: 50px;
-      font-size: 25px;
-      align-items: center;
-      justify-content: center;
-
-      i {
-        color: white;
-      }
-
-      .numero-notificaciones {
-        position: absolute;
-        color: white;
-        right: 10px;
-        top: 10px;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: red;
-        text-align: center;
-        font-size: 10px;
-        font-weight: bold;
-      }
-    }
-
-    .container-deploy {
-      color: white;
-      font-size: 15px;
-    }
-  }
-
-  .container-photo {
-    width: 35px;
-    height: 35px;
-    background: #207e8e;
-    border-radius: 50%;
-    border: solid 1px white;
   }
 
   // Ocultar contenedores hasta que la pantalla no tengan tamaño requerido
@@ -178,6 +180,28 @@ header {
 
       .container-nav {
         justify-content: space-between;
+
+        &__big {
+          &--search {
+            width: 350px;
+
+            .icon {
+              width: 335px;
+            }
+
+            .rectangulo {
+              width: 315px;
+              margin: 4px 23px 2px;
+            }
+          }
+
+          &--menu ul {
+            .iconos {
+              padding-left: 9px;
+              padding-right: 22px;
+            }
+          }
+        }
       }
 
       .logo {
@@ -190,26 +214,6 @@ header {
 
         .knowler {
           letter-spacing: 2px;
-        }
-      }
-
-      .container-nav__big--search {
-        width: 350px;
-
-        .icon {
-          width: 335px;
-        }
-
-        .rectangulo {
-          width: 315px;
-          margin: 4px 23px 2px;
-        }
-      }
-
-      .container-nav__big--menu ul {
-        .iconos {
-          padding-left: 9px;
-          padding-right: 22px;
         }
       }
     }

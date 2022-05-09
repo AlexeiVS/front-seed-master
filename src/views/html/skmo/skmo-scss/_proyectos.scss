@@ -63,6 +63,7 @@
           padding-top: 10px;
           display: flex;
           flex-direction: row;
+          text-align: center;
 
           &--button-one {
             width: 60px;
@@ -112,11 +113,13 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .container-sections__projects {
-    .container-main {
-      &__menu {
-        &--status {
-          width: 100%;
+  .container-sections {
+    &__projects {
+      .container-main {
+        &__menu {
+          &--status {
+            width: 100%;
+          }
         }
       }
     }
@@ -124,15 +127,43 @@
 }
 
 @media (min-width: 600px) and (max-width: 785px) {
-  .container-sections__projects {
-    .container-main {
-      &__menu {
-        width: 100%;
-
-        &--status {
-          display: flex;
-          justify-content: space-around;
+  .container-sections {
+    &__projects {
+      .container-main {
+        &__menu {
           width: 100%;
+
+          &--status {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            .current {
+              order: 1;
+            }
+
+            .related {
+              order: 3;
+            }
+
+            .closed {
+              order: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 599px) {
+  .container-sections {
+    &__projects {
+      .container-main {
+        &__menu {
+          &--status {
+            width: 100%;
+          }
 
           .current {
             order: 1;
@@ -145,45 +176,21 @@
           .closed {
             order: 2;
           }
-        }
-      }
-    }
-  }
-}
 
-@media (min-width: 320px) and (max-width: 599px) {
-  .container-sections__projects {
-    .container-main {
-      &__menu {
-        &--status {
-          width: 100%;
-        }
+          &__projects {
+            &--info {
+              &--buttons {
+                &--button-one {
+                  font-size: 10px;
+                }
 
-        .current {
-          order: 1;
-        }
+                &--button-two {
+                  font-size: 10px;
+                }
 
-        .related {
-          order: 3;
-        }
-
-        .closed {
-          order: 2;
-        }
-
-        &__projects {
-          &--info {
-            &--buttons {
-              &--button-one {
-                font-size: 10px;
-              }
-
-              &--button-two {
-                font-size: 10px;
-              }
-
-              &--button-three {
-                font-size: 10px;
+                &--button-three {
+                  font-size: 10px;
+                }
               }
             }
           }
